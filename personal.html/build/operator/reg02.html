@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="admin/profile">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="operator.html" class="button-transparent-light p16" title="Список персон"><i class="fa fa-users"></i></a>
+				<a href="operator/tree.html" class="button-transparent-light p16" title="Структура организации"><i class="fa fa-sitemap"></i></a>
+				<a href="operator/words.html" class="button-transparent-light p16" title="Ключевые слова и фразы"><i class="fas fa-pencil-alt"></i></a>
+				<a href="operator/report.html" class="button-transparent-light p16" title="Отчёты"><i class="fas fa-file-alt"></i></a>
+				<a href="operator/oplist.html" class="button-transparent-light p16" title="Список операторов"><i class="fa fa-user"></i></a>
+				<a href="operator/graph.html" class="button-transparent-light p16" title="Социальный граф организации"><i class="fas fa-link"></i></a>
+				<a href="admin/addorg.html" title="Добавить соискателя, сотрудника" class="button-addorg">Добавить&nbsp;соискателя</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<p>
+				Регистрация нового профиля  &nbsp;|&nbsp;
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="reg_steps row">
+			<div class="col-6 ">
+				<a href="reg01.html" title="Ввод личных данных и контактов" class="button-blue p14">1</a>
+				<a href="reg02.html" title="Добавление социальных сетей" class="button-blue p14">2</a>
+			</div>
+			<div class="col-6 right">
+				<a href="reg01.html" class="reg_steps__next"><i class="fa fa-angle-left"></i>&nbsp; Личные и контактные данные</a>
+			</div>
+		</div>
+
+		<h2 class="mt-0 mb-40">Шаг 2: Введите ссылки на социальные сети или выберите из поисковой выдачи</h2>
+		<form action="reg02.html" method="post">
+			<div class="row">
+				<div class="col-4 reg__col">
+					<input type="text" name="link_vk" value="" placeholder="Вконтакте" />
+					<input type="text" name="link_fb" value="" placeholder="Facebook" />
+				</div>
+				<div class="col-4 reg__col">
+					<input type="text" name="link_ok_ru" value="" placeholder="Одноклассники" />
+					<input type="text" name="link_insta" value="" placeholder="Instagram" />
+				</div>
+				<div class="col-4 reg__col">
+					<button type="button" class="button-input">Добавить поле</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 reg__col">
+					<button type="button" class="button-big button-blue w-100">Искать социальные сети</button>
+				</div>
+				<div class="col-8 reg__col">
+					<p class="mb-0 red-2">Внимание!<br /> Процесс поиска страниц в социальных сетях может занять до нескольких минут.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 reg__col">
+					<p class="mb-0 reg_link_filter">Найдено записей: 10</p>
+					<p class="reg_link_filter">
+						Показать только:  
+						<label><input type="checkbox" name="show_all_link" value="all" checked /> Все</label>
+						<label><input type="checkbox" name="show_fb" value="fb" checked /> Facebook</label>
+						<label><input type="checkbox" name="show_insta" value="insta" checked /> Instagram</label>
+						<label><input type="checkbox" name="show_ok_ru" value="ok_ru" checked /> Одноклассники</label>
+						<button type="button" class="link">Подтвердить</button>
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p11" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p11" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Вконтакте</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p12" class="reg__person_profile__input" checked />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p12" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Facebook</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p13" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p13" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Одноклассники</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p14" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p14" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Вконтакте</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p15" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p15" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Instagram</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p16" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p16" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Вконтакте</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p17" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p17" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Facebook</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p18" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p18" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Одноклассники</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p19" class="reg__person_profile__input" checked />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p19" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Вконтакте</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+				<div  class="col-1-5 reg__col">
+					<input type="checkbox" name="profile" value="profile" id="p20" class="reg__person_profile__input"  />
+<div class="reg__person_profile">
+	<div class="reg__person_profile__title">
+		<label for="p20" class="reg__person_profile__label">
+			<i class="fa fa-plus link" title="Добавить в профиль"></i>
+			<i class="fa fa-check green" title="Убрать из профиля"></i>
+		</label>
+		<a href="#" target="_blank" title="Перейти на страницу">Instagram</a>
+		<button class="button-empty red-2" title="Удалить из списка"><i class="fa fa-times"></i></button>
+	</div>
+	<img src="../img/pages/reg/user.jpg" alt="">
+	<div class="reg__person_profile__body">
+		<p class="p13 mb-0"><a href="#" title="Перейти на страницу">Фамилия Имя</a></p>
+		<p class="p12 mb-0">Город</p>
+	</div>
+</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg02.html" class="button-big button-blue w-100">Завершить регистрацию<br>и перейти к вновь созданному профилю &nbsp;<i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg01.html" class="button-big button-blue w-100">Завершить регистрацию<br>и перейти к регистрации нового профиля &nbsp;<i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</form>
+	</div>
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

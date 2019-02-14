@@ -8,12 +8,17 @@
 @import "common/_buttons.scss";
 @import "common/_tabs.scss";
 @import "common/_pagination.scss";
+@import "common/_modal.scss";
 
 
 @import "parts/_header.scss";
 @import "parts/_maincontent.scss";
 @import "parts/_footer.scss";
+@import "parts/_dropdown.scss";
 @import "parts/_filter.scss";
+@import "parts/_breadcrumbs.scss";
 
 @import "pages/_index.scss";
 @import "pages/_newpass.scss";
+@import "pages/_operator.scss";
+@import "pages/_reg.scss";

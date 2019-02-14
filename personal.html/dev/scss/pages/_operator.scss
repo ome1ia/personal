@@ -1,0 +1,38 @@
+.personslist {
+	margin-bottom: 20px;
+	ul {
+		margin-bottom: 0;
+		li:last-child {
+			.personslist__categiries_body {
+				margin-bottom: 0;
+			}
+		}
+	}
+	h3 {
+		margin: 0;
+		padding:10px;
+		font-size: 15px;
+		line-height: 1.4em;
+		&.personslist__title {
+			margin-bottom: 2px;
+			border:1px solid #888;
+		}
+		&.dropdown-title {
+			background-color:#f8f8f8;
+			border-bottom:1px solid #e0e0e0;
+		}
+	}
+	ul ul h3 {
+		margin-left: 15px;
+	}
+	ul ul ul h3 {
+		margin-left: 30px;
+	}
+	ul ul ul ul h3 {
+		margin-left: 45px;
+	}
+}
+	.personslist__categiries_body {
+		margin-top: 22px;
+		margin-bottom: 22px;
+	}

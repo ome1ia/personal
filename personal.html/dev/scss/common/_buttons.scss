@@ -23,6 +23,23 @@
     background: $blue;
     &:hover {
         background: $blue_hover;
+        color: #fff;
+    }
+}
+
+.button-input {
+    @extend %input;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.2s;
+    &:hover {
+        color: #fff;
+        background: $blue_hover;
+        border-color: $blue_hover;
     }
 }
 
@@ -61,10 +78,12 @@
 
 .button-transparent-dark {
     @extend %button;
-    border: 1px solid #fff;
-    background: rgba(0, 0, 0, 0.2);
+    padding: 9px 21px;
+    border: 2px solid $blue;
+    color: $blue;
     &:hover {
-        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid $blue_hover;
+        color: $blue_hover;
     }
 }
 
@@ -78,4 +97,11 @@
         color: $blue;
         border-color: $blue;
     }
+}
+
+.button-large,
+.button-big {
+    padding: 13px 29px;
+    line-height: 17px;
+    font-size: 14px;
 }

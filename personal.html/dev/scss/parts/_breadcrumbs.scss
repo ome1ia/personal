@@ -1,0 +1,7 @@
+.breadcrumbs {
+	@extend .filter;
+	@extend .filter_header;
+	padding: 15px 0;
+	border-bottom: none;
+	box-shadow: none;
+}

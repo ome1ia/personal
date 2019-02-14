@@ -1,0 +1,112 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html')
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<p>
+				Регистрация нового профиля  &nbsp;|&nbsp;
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="reg_steps row">
+			<div class="col-6 ">
+				<a href="reg01.html" title="Ввод личных данных и контактов" class="button-blue p14">1</a>
+				<a href="reg02.html" title="Добавление социальных сетей" class="button-blue p14">2</a>
+			</div>
+			<div class="col-6 right">
+				<a href="reg01.html" class="reg_steps__next"><i class="fa fa-angle-left"></i>&nbsp; Личные и контактные данные</a>
+			</div>
+		</div>
+
+		<h2 class="mt-0 mb-40">Шаг 2: Введите ссылки на социальные сети или выберите из поисковой выдачи</h2>
+		<form action="reg02.html" method="post">
+			<div class="row">
+				<div class="col-4 reg__col">
+					<input type="text" name="link_vk" value="" placeholder="Вконтакте" />
+					<input type="text" name="link_fb" value="" placeholder="Facebook" />
+				</div>
+				<div class="col-4 reg__col">
+					<input type="text" name="link_ok_ru" value="" placeholder="Одноклассники" />
+					<input type="text" name="link_insta" value="" placeholder="Instagram" />
+				</div>
+				<div class="col-4 reg__col">
+					<button type="button" class="button-input">Добавить поле</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 reg__col">
+					<button type="button" class="button-big button-blue w-100">Искать социальные сети</button>
+				</div>
+				<div class="col-8 reg__col">
+					<p class="mb-0 red-2">Внимание!<br /> Процесс поиска страниц в социальных сетях может занять до нескольких минут.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 reg__col">
+					<p class="mb-0 reg_link_filter">Найдено записей: 10</p>
+					<p class="reg_link_filter">
+						Показать только:  
+						<label><input type="checkbox" name="show_all_link" value="all" checked /> Все</label>
+						<label><input type="checkbox" name="show_fb" value="fb" checked /> Facebook</label>
+						<label><input type="checkbox" name="show_insta" value="insta" checked /> Instagram</label>
+						<label><input type="checkbox" name="show_ok_ru" value="ok_ru" checked /> Одноклассники</label>
+						<button type="button" class="link">Подтвердить</button>
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p11", "link": "Вконтакте", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p12", "link": "Facebook", "checked": "checked"})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p13", "link": "Одноклассники", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p14", "link": "Вконтакте", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p15", "link": "Instagram", "checked": ""})
+				</div>
+			</div>
+			<div class="row">
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p16", "link": "Вконтакте", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p17", "link": "Facebook", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p18", "link": "Одноклассники", "checked": ""})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p19", "link": "Вконтакте", "checked": "checked"})
+				</div>
+				<div  class="col-1-5 reg__col">
+					@@include('../template/duplicated_parts/reg_person_profile.html', {"id": "p20", "link": "Instagram", "checked": ""})
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg02.html" class="button-big button-blue w-100">Завершить регистрацию<br>и перейти к вновь созданному профилю &nbsp;<i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg01.html" class="button-big button-blue w-100">Завершить регистрацию<br>и перейти к регистрации нового профиля &nbsp;<i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</form>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

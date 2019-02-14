@@ -1,0 +1,120 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html')
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<p>
+				Регистрация нового профиля  &nbsp;|&nbsp;
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="reg_steps row">
+			<div class="col-6 ">
+				<a href="reg01.html" title="Ввод личных данных и контактов" class="button-blue p14">1</a>
+				<a href="reg02.html" title="Добавление социальных сетей" class="button-transparent-dark p14">2</a>
+			</div>
+			<div class="col-6 right">
+				<a href="reg02.html" class="reg_steps__next">Социальные сети &nbsp;<i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+
+		<h2 class="mt-0 mb-40">Шаг 1: Введите данные профиля, добавьте связи профиля</h2>
+		<form action="reg02.html" method="post">
+			<div class="file_upload">
+				<input type="file" name="person_photo" value="" />
+				<div class="link">Загрузить изображение профиля &nbsp;<i class="fa fa-upload"></i></a></div>
+			</div>
+
+			<div class="row">
+				<div class="col-3 reg__col">
+					<h3>Личные данные</h3>
+					<input type="text" name="person_surname" value="" placeholder="Фамилия*" required />
+					<input type="text" name="person_name1" value="" placeholder="Имя*" required />
+					<input type="text" name="person_name2" value="" placeholder="Отчество*" required />
+				</div>
+				<div class="col-3 reg__col--notitle">
+					<input type="text" name="berson_burth" value="" placeholder="Дата рождения*" required />
+					<input type="text" name="person_city" value=""  placeholder="Город*" required />
+					<button type="button" class="button-input">Добавить поле</button>
+				</div>
+				<div class="col-3 reg__col">
+					<h3>Контактная информация</h3>
+					<input type="text" name="person_phone" value="" placeholder="Номер телефона*" required />
+					<input type="text" name="person_email" value="" placeholder="Email*" required />
+					<button type="button" class="button-input">Добавить поле</button>
+				</div>
+				<div class="col-3 reg__col--notitle">
+					<div class="reg__col__fieldset">
+						<label><input type="checkbox" name="person_state1" value="state1" checked=""> Соискатель</label>&nbsp;
+						<label><input name="person_state2" value="state2" type="checkbox"> Сотрудник</label>
+					</div>
+					<div class="select select--middle">
+						<select name="work">
+							<option value="">Выбор подразделения</option>
+							<option value="01">Подразделение верхнего уровня</option>
+							<option value="1">Родительское подразделение 01</option>
+							<option value="2">— Подразделение второго уровня 01</option>
+							<option value="3">— Подразделение второго уровня 01</option>
+							<option value="4">Родительское подразделение 02</option>
+						</select>
+					</div>
+					<div class="select select--middle">
+						<select name="person_position">
+							<option value="">Выбор должности</option>
+							<option value="Начальник отдела">Начальник отдела</option>
+							<option value="Специалист отдела">Специалист отдела</option>
+							<option value="Стажер">Стажер</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="reg__col">
+				<h3>Связи</h3>
+				<p class="p13 mb-0">Добавьте ссылки на страницы в социальных сетях персон, связанных с профилем, и определите тип связи.</p>
+				<p class="p13 mb-0">Допустимо повторение ссылок с различными типами связей.</p>
+				<p class="p13 mb-0">Вы можете пропустить этот шаг и добавить связи позже в профиле персоны в разделе «Связи».</p>
+			</div>
+
+			<div class="row">
+				<div class="col-2-5 reg__col">
+					<input type="text" name="person_link" value="" placeholder="Ссылка на контакт">
+				</div>
+				<div class="col-2-5 reg__col">
+					<div class="select select--big">
+						<select name="link_type">
+							<option value="">Тип связи</option>
+							<option value="Друзья">Друзья</option>
+							<option value="Коллеги">Коллеги</option>
+							<option value="Сослуживцы">Сослуживцы</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-1-5 reg__col">
+					<button type="button" class="button-input">Сохранить</button>
+				</div>
+			</div>
+
+			<p class="p13">
+				<button class="link p13"><i class="fa fa-plus"></i>&nbsp; Добавить новую связь</button>
+			</p>
+
+			<div class="row">
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg02.html" class="button-big button-blue w-100"> Сохранить и перейти к добавлению социальных сетей  <i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="col-6 reg__col">
+					<!--здесь должна быть button, но чтобы не городить js с переадресацией, стоит ссылка-->
+					<a href="reg01.html" class="button-big button-blue w-100"> Сохранить и перейти к регистрации нового профиля  <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</form>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

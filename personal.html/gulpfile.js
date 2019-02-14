@@ -29,14 +29,14 @@ var path = {
         fonts:  'build/fonts/'
     },
     dev: {
-        html:   'dev/*.html', 
+        html:   ['dev/**/*.html', '!dev/template/**/*.html'], 
         js:     'dev/js/template/*.js',
         css:    'dev/scss/main.scss',
         img:    'dev/img/**/*.*', 
         fonts:  'dev/fonts/**/*.*'
     },
     watch: { 
-        html:   'dev/**/*.html',
+        html:   ['dev/**/*.html', '!dev/template/**/*.html'],
         js:     'dev/js/template/*.js',
         css:    'dev/scss/**/*.scss',
         img:    'dev/img/**/*.*',
@@ -123,7 +123,7 @@ gulp.task('build', gulp.parallel(
 
 //watch
 gulp.task('watch', gulp.parallel(function(){
-    watch([path.watch.html], function(event, cb) {
+    watch(path.watch.html, function(event, cb) {
         gulp.task('html:build')();
     });
     watch([path.watch.css], function(event, cb) {

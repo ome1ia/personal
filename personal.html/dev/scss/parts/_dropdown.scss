@@ -1,0 +1,25 @@
+.dropdown-expand {
+	display: inline-block;
+	padding: 0;
+	margin: 0 10px 0 0;
+	color: $blue;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	@extend .fas;
+
+	font-size: 13px;
+
+	span {
+		display: none;
+	}
+
+    &:before {
+    	content: "\f068";
+    }
+    &.icon-plus:before {
+    	content: "\f067";
+    }
+}

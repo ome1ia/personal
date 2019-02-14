@@ -1,0 +1,188 @@
+@@include('./template/head.html', {"path": "."})
+</head>
+<body>
+@@include('./template/header_operator.html')
+
+	<div class="filter">
+		<div class="filter_header">
+			<div class="container">
+				<button class="filter_expand dropdown-expand icon-plus" data-target="filter_body"><span>Раскрыть</span></button>
+				<p>Фильтр:</p>
+				<ul>
+					<li>Должность: технический директор</li>
+					<li>Отчество: Витольдович</li>
+					<li>Соискатель</li>
+					<li>Профиль сформирован</li>
+				</ul>
+				<p><button type="button" class="filter_reset">Сбросить</button></p>
+			</div>
+		</div>
+		
+		<div id="filter_body" class="filter_body hidden">
+			<form action="admin.html" method="get" class="filter_operator container">
+				<div class="row mb-15">
+					<input type="text" name="person_surname" value="" placeholder="Фамилия" class="filter_col1-4">
+					<input type="text" name="person_name1" value="" placeholder="Имя" class="filter_col1-4">
+					<input type="text" name="person_name2" value="Витольдович" placeholder="Отчество" class="filter_col1-4">
+					<input type="text" name="person_position" value="Технический директор" placeholder="Должность" class="filter_col1-4">
+				</div>
+				<div class="row">
+					<div class="col-8">
+						<label>
+							<input type="checkbox" name="person_status1" value="person_status1" checked="checked" />
+							Соискатель
+						</label>
+						<label>
+							<input type="checkbox" name="person_status2" value="person_status2" />
+							Сотрудник
+						</label>
+						<span>|</span>
+						<label>
+							<input type="checkbox" name="person_profile" value="person_status2">
+							Профиль сформирован
+						</label>
+						<button type="button" class="filter_reset red" title="Сбросить фильтр"><i class="fa fa-times"></i></button>
+					</div>
+					<div class="col-4 right">
+						<button type="submit" class="link">Применить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="row mb-30">
+			<div class="col-8">
+				<p class="mb-0">Всего персон: 120</p>
+				@@include('./template/pagination.html')
+			</div>
+			<div class="col-4 right">
+				<a href="operator/addpers.html" class="button-blue button-large p14">Создать новый профиль</a>
+			</div>
+		</div>
+
+		<ul class="personslist">
+			<li>
+				<h3 class="personslist__title">
+					<button class="dropdown-expand" data-target="persons_categiries"><span>Раскрыть</span></button>
+					Наименование организации
+				</h3>
+
+				<ul class="personslist__categiries" id="persons_categiries">
+					<li>
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="body1"><span>Раскрыть</span></button>
+							Без подразделения
+						</h3>
+						<div class="personslist__categiries_body hidden" id="body1">
+							@@include('./template/duplicated_parts/operator_persons.html')
+						</div>
+					</li>
+					<li>
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="body2"><span>Раскрыть</span></button>
+							Родительское подразделение 02
+						</h3>
+						<ul class="hidden" id="body2">
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="body2_1"><span>Раскрыть</span></button>
+									Родительское подразделение 02-1
+								</h3>
+								<div class="personslist__categiries_body hidden" id="body2_1">
+									@@include('./template/duplicated_parts/operator_persons.html')
+								</div>
+							</li>
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="body2_2"><span>Раскрыть</span></button>
+									Родительское подразделение 02-2
+								</h3>
+								<div class="personslist__categiries_body hidden" id="body2_2">
+									@@include('./template/duplicated_parts/operator_persons.html')
+								</div>
+							</li>
+						</ul>
+						
+					</li>
+					<li>
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="body3"><span>Раскрыть</span></button>
+							Родительское подразделение 03
+						</h3>
+						<ul class="hidden" id="body3">
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="body3_1"><span>Раскрыть</span></button>
+									Родительское подразделение 03-1
+								</h3>
+								<ul class="hidden" id="body3_1">
+									<li>
+										<h3 class="dropdown-title">
+											<button class="dropdown-expand icon-plus" data-target="body3_1_1"><span>Раскрыть</span></button>
+											Родительское подразделение 03-1-1
+										</h3>
+										<div class="personslist__categiries_body hidden" id="body3_1_1">
+											@@include('./template/duplicated_parts/operator_persons.html')
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="body4"><span>Раскрыть</span></button>
+							Родительское подразделение 04
+						</h3>
+						<ul class="hidden" id="body4">
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="body4_1"><span>Раскрыть</span></button>
+									Родительское подразделение 04-1
+								</h3>
+								<ul class="hidden" id="body4_1">
+									<li>
+										<h3 class="dropdown-title">
+											<button class="dropdown-expand icon-plus" data-target="body4_1_1"><span>Раскрыть</span></button>
+											Родительское подразделение 04-1-1
+										</h3>
+										<ul class="hidden" id="body4_1_1">
+											<li>
+												<h3 class="dropdown-title">
+													<button class="dropdown-expand icon-plus" data-target="body4_1_1_1"><span>Раскрыть</span></button>
+													Родительское подразделение 04-1-1-1
+												</h3>
+												<div class="personslist__categiries_body hidden" id="body4_1_1_1">
+													@@include('./template/duplicated_parts/operator_persons.html')
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+<div class="modal__fon"></div>
+<div class="modal__message" id="report_error">
+	<h4 class="modal__message__title">
+		Соцсети не добавлены
+		<button type="button" class="modal__message__close">
+			<i class="fas fa-times"></i>
+		</button>
+	</h4>
+	<div class="modal__message__body">
+		<p>Для формирования отчёта необходимо в профиле добавить ссылки на страницы в соцсетях</p>
+		<a href="operator/person.html">Перейти в профиль →</a>
+	</div>
+</div>
+
+@@include('./template/footer.html', {"path": "."})
+</body>
+</html>

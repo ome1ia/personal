@@ -1,0 +1,174 @@
+@@include('./template/head.html', {"path": "."})
+</head>
+<body>
+@@include('./template/header_admin.html')
+
+	<div class="filter">
+		<div class="filter_header">
+			<div class="container">
+				<button class="filter_expand dropdown-expand icon-plus" data-target="filter_body"><span>Раскрыть</span></button>
+				<p>Фильтр:</p>
+				<ul>
+					<li>ИНН: 7726018560</li>
+					<li> Приоритет от 20 до 80</li>
+				</ul>
+				<p><button type="button" class="filter_reset">Сбросить</button></p>
+			</div>
+		</div>
+		
+		<div id="filter_body" class="filter_body hidden">
+			<form action="admin.html" method="get" class="filter_admin container row">
+				<input type="text" name="orgname" value="" placeholder="Наименование организации" class="filter_orgname" />
+				<input type="text" name="id" value="" placeholder="ID" class="filter_id" />
+				<input type="text" name="inn" value="7726018560" placeholder="ИНН" class="filter_inn" />
+				<label>Приоритет от</label>
+				<input type="text" name="priority_from" value="" placeholder="0" class="filter_from" />
+				<label>до</label>
+				<input type="text" name="priority_to" value="" placeholder="100" class="filter_to" />
+				<button type="button" class="filter_reset red" title="Сбросить фильтр"><i class="fa fa-times"></i></button>
+
+				<button type="submit" class="button-blue">Применить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="row mb-30">
+			<div class="col-8">
+				<p class="mb-0">Всего организаций: 120</p>
+				@@include('./template/pagination.html')
+			</div>
+			<div class="col-4 right">
+				<a href="admin/addorg.html" class="button-blue button-large p14">Создать новую организацию</a>
+			</div>
+		</div>
+
+		<table class="table--border table--striped p13">
+			<col style="width: 0">
+   			<col style="width: 0">
+   			<col>
+   			<col style="width: 0">
+   			<col>
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+			<tr>
+				<th>
+					<a href="#" title="ID">ID</a>
+				</th>
+				<th>
+					<a href="#" title="ИНН" class="white">ИНН</a>
+				</th>
+				<th class="left">
+					<a href="#" title="Название компании">Наименование организации</a>
+				</th>
+				<th>
+					<a href="#" title="Количество тестовых бесплатных сотрудников"><i class="fa fa-users"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Даты автоматического обновления отчетов"><i class="fas fa-sync-alt"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Лимит количества ключевых слов для проверки лояльности и аффилированности">Lim</a>
+				</th>
+				<th>
+					<a href="#" title="Максимальное количество запросов в месяц">Req</a>
+				</th>
+				<th>
+					<a href="#" title="Приоритет организации при обработке данных"><i class="fa fa-exclamation"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Скачать последний отчёт"><i class="fa fa-download"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Редактировать данные организации"><i class="fas fa-pencil-alt"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Удалить организацию"><i class="fas fa-trash-alt"></i></a>
+				</th>
+			</tr>
+			<tr>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">4202800</a>
+				</td>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">7726018560</a>
+				</td>
+				<td>
+					<a href="admin/org.html" class="link--gray">Наименование организации</a>
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					10, 20
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					1000
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					<a href="#" title="Скачать последний отчет в PDF"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Редактирование"><i class="fa fa-cogs"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить организацию" class="red"><i class="fas fa-trash-alt"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">4202800</a>
+				</td>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">7726018560</a>
+				</td>
+				<td>
+					<a href="admin/org.html" class="link--gray">Наименование организации</a>
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					10, 20
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					1000
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					<a href="#" title="Скачать последний отчет в PDF"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Редактирование"><i class="fa fa-cogs"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить организацию" class="red"><i class="fas fa-trash-alt"></i></a>
+				</td>
+			</tr>
+		</table>
+
+		<div class="row mb-30">
+			<div class="col-8">
+				@@include('./template/pagination.html')
+			</div>
+		</div>
+	</div>
+
+@@include('./template/footer.html', {"path": "."})
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="admin/profile">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="admin.html" title="Список организаций" class="button-transparent-light">Организации</a>
+				<a href="admin/addorg.html" title="Добавить организацию" class="button-addorg">Добавить&nbsp;организацию</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="filter">
+		<div class="filter_header">
+			<div class="container">
+				<button class="filter_expand dropdown-expand icon-plus" data-target="filter_body"><span>Раскрыть</span></button>
+				<p>Фильтр:</p>
+				<ul>
+					<li>ИНН: 7726018560</li>
+					<li> Приоритет от 20 до 80</li>
+				</ul>
+				<p><button type="button" class="filter_reset">Сбросить</button></p>
+			</div>
+		</div>
+		
+		<div id="filter_body" class="filter_body hidden">
+			<form action="admin.html" method="get" class="filter_admin container row">
+				<input type="text" name="orgname" value="" placeholder="Наименование организации" class="filter_orgname" />
+				<input type="text" name="id" value="" placeholder="ID" class="filter_id" />
+				<input type="text" name="inn" value="7726018560" placeholder="ИНН" class="filter_inn" />
+				<label>Приоритет от</label>
+				<input type="text" name="priority_from" value="" placeholder="0" class="filter_from" />
+				<label>до</label>
+				<input type="text" name="priority_to" value="" placeholder="100" class="filter_to" />
+				<button type="button" class="filter_reset red" title="Сбросить фильтр"><i class="fa fa-times"></i></button>
+
+				<button type="submit" class="button-blue">Применить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="row mb-30">
+			<div class="col-8">
+				<p class="mb-0">Всего организаций: 120</p>
+				<div class="pagination">
+	<span class="pagination__current">1</span> 
+	<a href="#" class="pagination__link">2</a>
+	<a href="#" class="pagination__link">3</a>
+	<a href="#" class="pagination__link">4</a> 
+	<span>|</span>
+	<a href="#" class="pagination__link">показать на одной странице</a>
+</div>
+			</div>
+			<div class="col-4 right">
+				<a href="admin/addorg.html" class="button-blue button-large p14">Создать новую организацию</a>
+			</div>
+		</div>
+
+		<table class="table--border table--striped p13">
+			<col style="width: 0">
+   			<col style="width: 0">
+   			<col>
+   			<col style="width: 0">
+   			<col>
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+   			<col style="width: 0">
+			<tr>
+				<th>
+					<a href="#" title="ID">ID</a>
+				</th>
+				<th>
+					<a href="#" title="ИНН" class="white">ИНН</a>
+				</th>
+				<th class="left">
+					<a href="#" title="Название компании">Наименование организации</a>
+				</th>
+				<th>
+					<a href="#" title="Количество тестовых бесплатных сотрудников"><i class="fa fa-users"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Даты автоматического обновления отчетов"><i class="fas fa-sync-alt"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Лимит количества ключевых слов для проверки лояльности и аффилированности">Lim</a>
+				</th>
+				<th>
+					<a href="#" title="Максимальное количество запросов в месяц">Req</a>
+				</th>
+				<th>
+					<a href="#" title="Приоритет организации при обработке данных"><i class="fa fa-exclamation"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Скачать последний отчёт"><i class="fa fa-download"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Редактировать данные организации"><i class="fas fa-pencil-alt"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Удалить организацию"><i class="fas fa-trash-alt"></i></a>
+				</th>
+			</tr>
+			<tr>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">4202800</a>
+				</td>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">7726018560</a>
+				</td>
+				<td>
+					<a href="admin/org.html" class="link--gray">Наименование организации</a>
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					10, 20
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					1000
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					<a href="#" title="Скачать последний отчет в PDF"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Редактирование"><i class="fa fa-cogs"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить организацию" class="red"><i class="fas fa-trash-alt"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">4202800</a>
+				</td>
+				<td class="center">
+					<a href="admin/org.html" class="link--gray">7726018560</a>
+				</td>
+				<td>
+					<a href="admin/org.html" class="link--gray">Наименование организации</a>
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					10, 20
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					1000
+				</td>
+				<td class="center">
+					100
+				</td>
+				<td class="center">
+					<a href="#" title="Скачать последний отчет в PDF"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Редактирование"><i class="fa fa-cogs"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить организацию" class="red"><i class="fas fa-trash-alt"></i></a>
+				</td>
+			</tr>
+		</table>
+
+		<div class="row mb-30">
+			<div class="col-8">
+				<div class="pagination">
+	<span class="pagination__current">1</span> 
+	<a href="#" class="pagination__link">2</a>
+	<a href="#" class="pagination__link">3</a>
+	<a href="#" class="pagination__link">4</a> 
+	<span>|</span>
+	<a href="#" class="pagination__link">показать на одной странице</a>
+</div>
+			</div>
+		</div>
+	</div>
+
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
