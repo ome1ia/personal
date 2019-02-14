@@ -1,0 +1,28 @@
+@@include('./template/head.html')
+</head>
+<body>
+	<header class="header header--big">
+		<div class="container">
+			<h1>
+				ПЕРСОНАЛ
+				<small class="p15">Восстановление пароля</small>
+			</h1>
+		</div>
+	</header>
+
+	<div class="maincontent container">
+		<a href="/" class="maincontent_logo">ПЕРСОНАЛ</a>
+		
+		<form action="admin.html" method="post" class="newpass-form">
+			<p>Введите логин (email, указанный при регистрации)</p>
+
+			<input type="text" name="email" placeholder="Email" />
+			<button type="submit" class="link newpass-button">Отправить новый пароль на почту</button>
+
+			<p><a href="/" class="mb-0">← Вернуться назад</a></p>
+		</form>
+	</div>
+
+@@include('./template/footer.html')
+</body>
+</html>

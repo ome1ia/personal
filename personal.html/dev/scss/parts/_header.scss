@@ -1,0 +1,113 @@
+.header {
+	display: block;
+	background-color: $blue;
+	padding-bottom: 7px;
+  overflow: hidden;
+    padding-top: 5px;
+   	&.header--big {
+   		padding-bottom: 15px;
+    	padding-top: 12px;
+    	text-align: center;
+    	h1 {
+	    	color: #fff;
+	    	margin: 0 auto;
+	    	font-size: 22px;
+	    	line-height: 1.5em;
+	    	letter-spacing: 2px;
+	    	font-weight: normal;
+    	}
+    	small {
+    		display: block;
+    		font-size: 13px;
+    		line-height: 1.5em;
+    		letter-spacing: 0px;
+        &.p15 {
+          font-size: 15px;
+        }
+    	}
+   	}
+
+    a {
+      color: #fff;
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .button-addorg {
+      display: inline-block;
+      position: relative;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-indent: 100%;
+      line-height: 0;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2px;
+        left: 50%;
+        margin-left: -1px;
+        top: 5px;
+        bottom: 5px;
+        background: #fff;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 5px;
+        right: 5px;
+        background: #fff;
+      }
+
+      &:hover {
+        background: #fff;
+        border-color: $blue;
+        &:before, &:after {
+          background: $blue;
+        }
+      }
+    }
+}
+  .header_left-menu {
+    float: left;
+    line-height: 36px;
+    a {
+      margin-right: 15px;
+    }
+  }
+
+    .header_logo {
+      display: inline-block;
+      width: 32px;
+      height: 36px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-indent: 100%;
+      line-height: 0;
+      background: url(../img/parts/header/logo.png) 50% 50% no-repeat;
+      background-size: contain;
+    }
+
+  .header_right-menu {
+    float: right;
+    line-height: 36px;
+    a {
+      margin-left: 15px;
+    }
+
+    .button-transparent-light {
+      font-size: 14px;
+      padding: 7px 12px;
+    }
+  }

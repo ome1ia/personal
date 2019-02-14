@@ -1,0 +1,231 @@
+.container {
+	display: block;
+	max-width: 960px;
+	min-width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	@media all and ($xs) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+%justify,
+.justify {
+	text-align: justify;
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 90%;
+		height: 1px;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+%flex {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+}
+    .no-flexbox %flex {
+        text-align: justify;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 99%;
+            height: 1px;
+        }
+        & > * {
+            display: inline;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+        }
+    }
+    .no-js {
+        @extend .no-flexbox;
+    }
+
+.row {
+	@extend %flex;
+}
+.col-3 {
+	flex: 0 1 22%;
+	margin: 0 4% 0 0;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:nth-child(4n+4) {
+		margin-right: 0;
+	}
+/*	@media all and($md) {
+		flex: 0 1 24%;
+		margin: 0 1% 0 0;
+	}
+	@media all and($xs) {
+		flex: 0 0 100%;
+		margin: 0;
+	} */
+}
+
+.col-4 {
+    flex: 0 1 30.66%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 32.66%;
+        margin: 0 1% 0 0;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    }*/
+}
+
+.col-6 {
+    flex: 0 1 48%;
+    margin: 0 4% 0 0;
+    max-width: 48%;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 100%;
+        max-width: 100%;
+        margin: 0;
+    } */
+}
+
+.col-8 {
+    flex: 0 1 65.32%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 66.32%;
+        margin: 0 1% 0 0;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    } */
+}
+
+.col-9 {
+    flex: 0 1 74%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 0 75%;
+        margin: 0 1% 0 0;
+        overflow: hidden;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    } */
+}
+.col-12 {
+    flex: 1 1 100%;
+}
+.col-1-5 {
+    flex: 0 1 16.8%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 19.2%;
+        margin: 0 1% 0 0;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    } */
+}
+.col-3-5 {
+    flex: 0 1 58.4%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 60%;
+        margin: 0 1% 0 0;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    } */
+}
+.col-2-5 {
+    flex: 0 1 37.6%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+/*    @media all and($md) {
+        flex: 0 1 39%;
+        margin: 0 1% 0 0;
+    }
+    @media all and($xs) {
+        flex: 0 0 100%;
+        margin: 0;
+    } */
+}
+
+.m-order-1 {
+	@media all and($xs) {
+		order: -1;
+	}
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.block,
+body .block {
+    display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+body .m-hidden {
+	@media all and($xs) {
+		display: none;
+	}
+}
+
+body .d-hidden {
+    @media all and($no-xs) {
+        display: none;
+    }
+}
+
+body .margin-bottom-xs {
+    margin-bottom: 1em;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

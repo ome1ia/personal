@@ -1,0 +1,24 @@
+.maincontent {
+	padding-bottom: 82px;
+	position: relative;
+}
+.maincontent_withlogo {
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 30px;
+}
+.maincontent_logo {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 80px;
+	height: 90px;
+	top: 40px;
+	left: 50%;
+	margin-left: -40px;
+	background: url(../img/pages/index/logo_personal.png) 50% 50% no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	text-indent: 100%;
+	line-height: 0;
+}

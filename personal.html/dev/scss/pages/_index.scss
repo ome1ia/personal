@@ -1,0 +1,44 @@
+.auth-form {
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 30px;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 80px;
+		height: 90px;
+		top: 40px;
+		left: 50%;
+		margin-left: -40px;
+		background: url(../img/pages/index/logo_personal.png) 50% 50% no-repeat;
+		background-size: contain;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		width: 20%;
+		margin: 0 auto 6px;
+	}
+	.button-blue {
+		display: block;
+		margin: 0 auto 6px;
+		width: 20%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	label {
+		display: block;
+		width: 20%;
+		margin: 0 auto 30px;
+		color: $text;
+		font-size: $text_small;
+	}
+	p {
+		margin: 0 auto 20px 40%;
+	}
+	.newpass-button {
+		margin: 20px auto 30px 40%;
+	}
+}

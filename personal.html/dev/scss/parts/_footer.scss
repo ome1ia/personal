@@ -1,0 +1,31 @@
+.footer {
+	display: block;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 12px 0;
+	height: 28px;
+	background-color: #f0f0f0;
+
+	.container {
+		text-align: justify;
+		height: 28px;
+		overflow: hidden;
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 1px;
+			width: 90%;
+		}
+	}
+	p {
+	 	color: #777;
+	 	margin-bottom: 0;
+	 	font-size: $text_small;
+	 	line-height: 28px;
+	 }
+	.link, a {
+		font-size: $text_small;
+	}
+}

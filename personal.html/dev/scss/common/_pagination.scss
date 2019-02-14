@@ -1,0 +1,30 @@
+.pagination {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin: 0 0.15em;
+        padding: 0;
+        font-size: 17px;
+        color: #008de0;
+    }
+    a {
+        text-decoration: none;
+        color: #008de0;
+    }
+    .pagination__item-active {
+        a {
+            color: #edad00;
+            cursor: default;
+        }
+    }
+    .icon-left-open {
+        font-size: 12px;
+        margin-right: 0.5em;
+    }
+    .icon-right-open {
+        font-size: 12px;
+        margin-left: 0.5em;
+    }
+}

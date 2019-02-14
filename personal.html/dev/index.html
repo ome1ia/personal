@@ -1,0 +1,29 @@
+@@include('./template/head.html')
+</head>
+<body>
+	<header class="header header--big">
+		<div class="container">
+			<h1>
+				ПЕРСОНАЛ
+				<small>Анализ сотрудников и соискателей на основе открытых данных сети Интернет</small>
+			</h1>
+		</div>
+	</header>
+
+	<div class="maincontent container">
+		<form action="admin.html" method="post" class="auth-form">
+			<input type="text" name="login" placeholder="Login" />
+			<input type="password" name="login" placeholder="Password" />
+			<button type="submit" class="button-blue">Войти в систему</button>
+			<label>
+				<input type="checkbox" name="persistent" value="persistent" />
+				Оставаться в системе
+			</label>
+
+			<p><a href="newpass.html">Забыли пароль?</a></p>
+		</form>
+	</div>
+
+@@include('./template/footer.html')
+</body>
+</html>

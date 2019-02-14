@@ -1,0 +1,81 @@
+%button {
+    display: inline-block;
+    margin: 0;
+    padding: 11px 23px;
+    line-height: 16px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+//    text-transform: uppercase;
+    color: #fff;
+
+    transition: all 0.2s;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.button-blue {
+    @extend %button;
+    background: $blue;
+    &:hover {
+        background: $blue_hover;
+    }
+}
+
+.button-black {
+    @extend %button;
+    background: #444;
+    &:hover {
+        background: #111230;
+    }
+}
+
+.button-yellow {
+    @extend %button;
+    background: #ffca0f;
+    color: #111320;
+    &:hover {
+        background: #feb900;
+    }
+}
+
+.button-red {
+    @extend %button;
+    background: #fe0000;
+    &:hover {
+        background: #c20100;
+    }
+}
+.button-transparent {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-transparent-dark {
+    @extend %button;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+    &:hover {
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.button-transparent-light {
+    @extend %button;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    &:hover {
+        background: #fff;
+        color: $blue;
+        border-color: $blue;
+    }
+}
