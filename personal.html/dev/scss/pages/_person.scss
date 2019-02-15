@@ -1,0 +1,58 @@
+.person__edit {
+	input[type="checkbox"] {
+		margin-left: 0.3em;
+		margin-right: 0.2em;
+	}
+
+	.person__edit__fieldset {
+		overflow: hidden;
+	}
+	.label-left {
+		display: block;
+		float: left;
+		width: 16.8%;
+		margin-right: 4%;
+		font-size: 15px;
+		line-height: 40px;
+	}
+	.label-left + .input_wrap {
+		width: 79%;
+		float: left;
+	}
+	h3 {
+		font-size: 15px;
+	}
+
+	button.mb-20 {
+		margin-bottom: 20px;
+
+	}
+	button.w-100 {
+		display: block;
+		padding-right: 0;
+		padding-left: 0;
+		width: 100%;
+	}
+}
+
+	.person__user_image {
+		width: 200px;
+		height: 261px;
+	}
+	.person_user_image__edit {
+		margin-top: 10px;
+		font-size: 14px;
+		color: #333;
+		vertical-align: middle;
+		.file_upload {
+			display: inline-block;
+			overflow: hidden;
+			vertical-align: middle;
+			margin-right: 0.2em;
+		}
+		.person_user_image__edit__delete {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 0.2em;
+		}
+	}

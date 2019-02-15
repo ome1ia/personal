@@ -151,6 +151,9 @@ a,
 .green {
     color: $green_text;
 }
+.green-2 {
+    color: $green;
+}
 .green_fon {
     background-color: $green;
     color: #fff;
@@ -179,6 +182,13 @@ a,
 .p12,
 body .p12 {
     font-size: 12px;
+    a {
+        font-size: inherit;
+    }
+}
+.p12_5,
+body .p12_5 {
+    font-size: 12.5px;
     a {
         font-size: inherit;
     }

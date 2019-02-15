@@ -43,20 +43,11 @@
     }
 }
 
-.button-black {
+.button-green {
     @extend %button;
-    background: #444;
+    background: $green;
     &:hover {
-        background: #111230;
-    }
-}
-
-.button-yellow {
-    @extend %button;
-    background: #ffca0f;
-    color: #111320;
-    &:hover {
-        background: #feb900;
+        background: $green_hover;
     }
 }
 

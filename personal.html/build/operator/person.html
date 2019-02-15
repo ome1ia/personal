@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="admin/profile">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../operator.html" class="button-transparent-light p16" title="Список персон"><i class="fa fa-users"></i></a>
+				<a href="../operator/tree.html" class="button-transparent-light p16" title="Структура организации"><i class="fa fa-sitemap"></i></a>
+				<a href="../operator/words.html" class="button-transparent-light p16" title="Ключевые слова и фразы"><i class="fas fa-pencil-alt"></i></a>
+				<a href="../operator/report.html" class="button-transparent-light p16" title="Отчёты"><i class="fas fa-file-alt"></i></a>
+				<a href="../operator/oplist.html" class="button-transparent-light p16" title="Список операторов"><i class="fa fa-user"></i></a>
+				<a href="../operator/graph.html" class="button-transparent-light p16" title="Социальный граф организации"><i class="fas fa-link"></i></a>
+				<a href="../operator/reg01.html" title="Добавить соискателя, сотрудника" class="button-addorg">Добавить&nbsp;соискателя</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs breadcrumbs--large">
+		<div class="container row">
+			<div class="col-6">
+				<img src="../img/pages/person/user_small.jpg" alt="" />
+				<p class="breadcrumbs__title">Изотов Сергей Витольдович</p>
+				<p class="p13">Технический директор</p>
+			</div>
+			<div class="col-6">
+				<p class="p13">Департамент проектирования серверной архитектуры</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="tabs__container row">
+			<span class="like_tab__title-active">Профиль</span>
+			<a href="person/rel.html" class="like_tab__title">Связи</a>
+			<a href="person/report.html" class="like_tab__title">Анализ</a>
+			<a href="person/archive.html" class="like_tab__title">Архив</a>
+		</div>
+
+		<form action="person.html" method="post" class="mt-30 person__edit">
+			<div class="row">
+				<div class="col-4">
+					<img src="../img/pages/person/user.jpg" alt="" class="person__user_image" />
+					<div class="person_user_image__edit">
+						<div class="file_upload">
+							<input type="file" name="person_photo" />
+							<div class="link p14">Изменить</div>
+						</div>
+						|
+						<button type="button" class="link p14 person_user_image__edit__delete">Удалить</button>
+						<!-- или <input type="button" name="delete_photo" value="Удалить" class="link p14 person_user_image__edit__delete" />  -->
+					</div>
+				</div>
+				<div class="col-8">
+					<p class="p12_5 mb-0">Создан: 15.12.18 в 12-00, GMT+3</p>
+					<p class="p12_5 mb-0">Последний анализ профиля: 15.12.18 в 12-00, GMT+3</p>
+					<p class="p12_5 mb-0">Последнее обновление связей: 15.12.18 в 12-00, GMT+3</p>
+					<p class="p12_5 mb-0">Последнее обновление профиля: 15.12.18 в 12-00, GMT+3</p>
+					<p class="p12_5 mb-25">Статус профиля: <span class="green-2">сформированный</span> | <span class="red-2">несформированный (ссылки на соцсети не добавлены)</span></p>
+
+					<p class="p15">
+						Статус персоны:
+						<label>
+							<input type="checkbox" name="person_state_1" value="1" checked />
+							Соискатель
+						</label>
+						<label>
+							<input type="checkbox" name="person_state_2" value="2" />
+							Сотрудник
+						</label>
+					</p>
+					<div class="person__edit__fieldset mb-10">
+						<label class="label-left">Должность:</label>
+						<div class="input_wrap">
+							<input type="text" name="person_work" value="Технический директор" />
+						</div>
+					</div>
+					<div class="person__edit__fieldset">
+						<label class="label-left">Отдел:</label>
+						<div class="input_wrap changed">
+							<input type="text" name="person_department" value="Департамент проектирования серверной архитектуры" disabled>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-40">
+				<div class="col-4">
+					<h3>Личные данные</h3>
+					<div class="mb-20 changed">
+						<input type="text" name="person_surname" value="Изотов" disabled placeholder="Фамилия" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_name1" value="Сергей" disabled placeholder="Имя" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_name2" value="Витольдович" disabled placeholder="Отчество" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_burth" value="10.10.1980" disabled placeholder="Дата рождения" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_city" value="Екатеринбург" disabled placeholder="Город" />
+					</div>
+					<button type="button" class="button-input w-100">Добавить поле</button>
+				</div>
+				<div class="col-4">
+					<h3>Контактная информация</h3>
+					<div class="mb-20 changed">
+						<input type="text" name="person_phone" value="+7 920 800-20-20" disabled placeholder="Телефон" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_phone" value="admin@mail.ru" disabled placeholder="Email" />
+					</div>
+					<button type="button" class="button-input w-100">Добавить поле</button>
+				</div>
+				<div class="col-4">
+					<h3>Социальные сети</h3>
+					<div class="mb-20 changed">
+						<input type="text" name="person_vk" value="https://vk.com/Vitoldych80" disabled placeholder="Вконтакте" />
+					</div>
+					<div class="mb-20 changed">
+						<input type="text" name="person_fb" value="https://facebook.com/Vitoldych80" disabled placeholder="Facebook" />
+					</div>
+					<button type="button" class="button-input w-100 mb-20">Добавить поле</button>
+					<button type="button" class="button-green w-100 mb-20">Обновить социальные сети</button>
+					<p class="red-2 p13">Внимание!<br /> Процесс поиска страниц в социальных сетях может занять до нескольких минут.</p>
+				</div>
+			</div>
+
+			<div class="row mt-35">
+				<div class="col-4">
+					<button type="submit" class="button-big button-blue w-100">Сохранить изменения</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

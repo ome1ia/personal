@@ -36,6 +36,13 @@ input::-webkit-input-placeholder {
    transition: all 0.2s;
 }
 
+.changed input,
+input.changed {
+    border-color: #f8f8f8;
+    background-color: #f8f8f8;
+    font-size: 14px;
+}
+
 .select {
     overflow: hidden;
     position: relative;
@@ -120,5 +127,11 @@ input::-webkit-input-placeholder {
     }
     i {
         font-size: 0.9em;
+    }
+    &:hover {
+        cursor: pointer;
+        .link {
+            color: $blue_hover;
+        }
     }
 }

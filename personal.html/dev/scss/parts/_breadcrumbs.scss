@@ -4,4 +4,23 @@
 	padding: 15px 0;
 	border-bottom: none;
 	box-shadow: none;
+
+	&.breadcrumbs--large {
+		padding: 10px 0;
+	}
+
+	.breadcrumbs__title {
+		display: block;
+		font-size: 15px;
+		margin-bottom: 0;
+	}
 }
+	.breadcrumbs--large {
+		overflow: hidden;
+		img {
+			width: 40px;
+			height: 40px;
+			float: left;
+			margin-right: 15px;
+		}
+	}
