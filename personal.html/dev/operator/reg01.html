@@ -1,7 +1,7 @@
 @@include('../template/head.html', {"path": ".."})
 </head>
 <body>
-@@include('../template/header_operator.html')
+@@include('../template/header_operator.html', {"path": ".."})
 
 	<div class="breadcrumbs">
 		<div class="container">
@@ -26,8 +26,8 @@
 		<h2 class="mt-0 mb-40">Шаг 1: Введите данные профиля, добавьте связи профиля</h2>
 		<form action="reg02.html" method="post">
 			<div class="file_upload">
-				<input type="file" name="person_photo" value="" />
-				<div class="link">Загрузить изображение профиля &nbsp;<i class="fa fa-upload"></i></a></div>
+				<input type="file" name="person_photo" />
+				<div class="link">Загрузить изображение профиля &nbsp;<i class="fa fa-upload"></i></div>
 			</div>
 
 			<div class="row">
