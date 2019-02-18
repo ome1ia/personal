@@ -1,0 +1,23 @@
+.measure {
+	padding-top: 30px;
+	font-size: 14px;
+
+	input {
+		display: none;
+	}
+
+	i {
+		color: $yellow;
+		font-size: 14px;
+		margin-left: 0.2em;
+		cursor: pointer;
+	}
+}
+.reportlist__category .measure {
+	padding-top: 10px;
+}
+	.measure__title {
+		display: inline-block;
+		margin-bottom: 0;
+		font-size: 14px;
+	}

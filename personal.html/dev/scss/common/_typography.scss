@@ -50,7 +50,7 @@ h4,
     color: $text;
     font-size: $text_normal;
     line-height: 1.5em;
-    font-weight: bold;
+    font-weight: normal;
 }
 p,
 .p {
@@ -116,6 +116,16 @@ td {
         background-color: #f6f6f6;
     }
 }
+.td--small td,
+td.td--small {
+    padding: 3px;
+    font-size: 13px;
+}
+.td--middle td,
+td.td--middle {
+    padding: 8px;
+    font-size: 14px;
+}
 a,
 .link {
     color: $blue;
@@ -148,11 +158,17 @@ a,
 .red-2 {
     color: $red;
 }
+.bad {
+    @extend .red-2;
+}
 .green {
     color: $green_text;
 }
 .green-2 {
     color: $green;
+}
+.ok {
+    @extend .green-2;
 }
 .green_fon {
     background-color: $green;
@@ -167,6 +183,9 @@ a,
     a, a:hover {
         color: #fff;
     }
+}
+.yellow_icon {
+    color: $yellow_icon;
 }
 .button-empty {
     text-decoration: none;
@@ -204,4 +223,10 @@ body .p14 {
 .p16,
 body .p16 {
     font-size: 16px;
+}
+
+.divider {
+    display: inline-block;
+    margin: auto 0.2em;
+    vertical-align: baseline;
 }

@@ -1,0 +1,306 @@
+.reportlist {
+	@extend .personslist;
+	
+	.mb-80 {
+		margin-bottom: 80px;
+	}
+	.mb-60 {
+		margin-bottom: 60px;
+	}
+	.mb-50 {
+		margin-bottom: 50px;
+	}
+	.mb-40 {
+		margin-bottom: 40px;
+	}
+	.mt-30 {
+		margin-top: 30px;
+	}
+
+	.reportlist__title {
+		@extend .personslist__title;
+		overflow: hidden;
+	}
+	.reportlist__title__summary {
+		float: right;
+		padding-right: 10px;
+	}
+}
+	.reportlist__categories_body {
+		@extend .personslist__categories_body;
+
+		.pagination {
+			padding: 0;
+		}
+	}
+
+	.reportlist__categories {
+		overflow: hidden;
+	}
+
+	.reportlist__category {
+		&.column-3-5 {
+			float: left;
+			width: 58.4%;
+			margin-right: 4%;
+		}
+		&.column-2-5 {
+			float: left;
+			width: 37.6%;
+		}
+		table {
+			margin-bottom: 0;
+		}
+		td {
+			padding: 0;
+			border: none;
+			line-height: 1.6em;
+		}
+	}
+
+.report__summary {
+	border: 1px solid #888;
+    padding: 10px;
+
+    table {
+    	margin-bottom: 0;
+    }
+    td {
+    	padding: 0;
+    	border-bottom: none;
+    	height: 24px;
+    	font-size: 13px;
+    }
+}
+.report__summary--gray {
+	border: 1px solid #dedede;
+	padding:15px;
+	text-align: center;
+}
+	.report__summary__number {
+		margin-bottom: 0;
+		font-size: 42px;
+		font-weight: 100;
+	    line-height: 1.4;
+	    letter-spacing: 1px;
+	}
+.report__likes__legend {
+	padding-top: 45px;
+
+	table {
+		margin-bottom: 0;
+		width: auto;
+	}
+	td {
+		height: 25px;
+		font-size: 13px;
+		border: none;
+		padding: 0;
+	}
+}
+
+.report__comments__legend {
+	i {
+		margin-right: 0.35em;
+	}
+}
+
+.report__comments__table {
+	td {
+		height: 25px;
+		font-size: 13px;
+		padding: 0;
+		border: none;
+	}
+}
+
+.socnetactivity__row {
+	align-items: stretch;
+	.report__summary {
+		height: 100%;
+		height: calc(100% - 22px);
+	}
+}
+	.socnetactivity__summary {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+	.socnetactivity__summary__sum {
+		display: block;
+		margin-top: 2px;
+		margin-bottom: 3px;
+		color: $blue;
+		font-size: 18px;
+	}
+	.socnetactivity__summary__average {
+		@extend .socnetactivity__summary__sum;
+		color: $green;
+	}
+
+
+.reportlist__emotions {
+	background-color:#f8f8f8;
+	padding:18px;
+
+	table {
+		width: 100%;
+	}
+	td {
+		padding: 0;
+		border: none;
+		font-size: 13px;
+		line-height: 1.65em;
+	}
+}
+	.emotions__summary__title {
+		margin-bottom: 10px;
+		font-size: 42px;
+		font-weight: 100;
+		small {
+			display: block;
+			font-weight: normal;
+			font-size: 14px;
+		}
+	}
+.reportlist__emotions__legend {
+	margin: 10px 0 20px;
+}
+
+
+.reportlist__prof {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}	
+	.reportlist__prof__diagram {
+		max-width: 211px;
+		max-height: 211px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.reportlist__prof__table {
+		h3 {
+			padding-left: 0;
+			margin-bottom: 10px;
+		}
+		table {
+			margin-bottom: 0;
+		}
+		td {
+			border: none;
+			padding: 0;
+			font-size: 13px;
+			&.right {
+				width: 16%;
+			}
+		}
+		i {
+			font-size: 12px;
+			margin-right: 0.3em;
+		}
+	}
+		.reportlist__prof__summary__title {
+			text-align: center;
+			font-size: 13px;
+			margin-bottom: 8px;
+		}
+		.reportlist__prof__summary__body {
+			text-align: center;
+			font-size: 18px;
+			color: $blue;
+			margin-bottom: 5px;
+		}
+		.reportlist__prof__summary__persent {
+			text-align: center;
+			font-size: 42px;
+			font-weight: 100;
+		    line-height: 1.4;
+		    letter-spacing: 1px;
+		    margin-bottom: 0px;
+		}
+
+.diagram--green {
+	color: #97CC64;
+}
+.diagram--yellow {
+	color: #FFD963;
+}
+.diagram--yellow-2 {
+	color:#F2BD3B;
+}
+.diagram--red {
+	color: #FD5A3E;
+}
+.diagram--red-2 {
+	color:#DF513D;
+}
+.diagram--blue {
+	color: #77B6E7;
+}
+.diagram--blue-2 {
+	color:#92CDDD;
+}
+.diagram--violet {
+	color:#A955B8;
+}
+.diagram--darkblue {
+	color:#556CB8;
+}
+.diagram--white {
+	color:#444;
+}
+
+.reportlist__hr {
+	margin: 10px 0;
+	height: 1px;
+	background: #ddd;
+	border: none;
+	&.mt-25 {
+		margin-top: 25px;
+	}
+	&.mt-30 {
+		margin-top: 30px;
+	}
+}
+
+.report_risk__table {
+	.link--gray:hover {
+		text-decoration: underline;
+	}
+}
+	.report_risk_schedule {
+		width: 200px;
+		height: 14px;
+		display: inline-block;
+		margin: auto;
+		overflow: hidden;
+
+		div {
+			float: left;
+			height: 14px;
+		}
+	}
+.report_risk__note {
+	padding-bottom: 10px;
+	font-size: 13px;
+
+	p {
+		margin-bottom: 0;
+		font-size: 13px;
+	}
+	i {
+		font-size: 12px;
+		margin-right: 0.3em;
+	}
+}
+
+	.report__red_fon {
+		@extend .red_fon;
+		font-size: 12.5px;
+		line-height: 25px;
+		height: 25px;
+		padding: 0 15px;
+		margin-top: 8px;
+	}
