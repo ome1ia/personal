@@ -1,0 +1,62 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html', {"path": ".."})
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Настройки личного кабинета  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form action="" method="get" class="row mt-10">
+			<div class="col-1-5">
+				<p class="p13">
+					Статус:<br> 
+					<span>Главный оператор</span>
+				</p>
+				<p class="p13">
+					Создан:<br> 
+					<span>10.12.2018 в 16:02</span><br> 
+					<span>GMT +3</span>
+				</p>
+			</div>
+			<div class="col-2-5">
+				<div class="mb-20 changed">
+					<input type="text" name="operator_surname" value="Николаев" disabled placeholder="Фамилия" />
+				</div>
+				<div class="mb-20 changed">
+					<input type="text" name="operator_name1" value="Александр" disabled placeholder="Имя" />
+				</div>
+				<div class="changed">
+					<input type="text" name="operator_name2" value="Сергеевич" disabled placeholder="Отчество" />
+				</div>
+			</div>
+			<div class="col-2-5">
+				<div class="mb-20 profile__fieldset">
+					<label class="profile__label">Логин:</label>
+					<div class="changed w-240 profile__input">
+						<input type="text" name="operator_login" value="admin@inbox.ru" disabled placeholder="Логин" />
+					</div>
+				</div>
+				<div class="mb-20 profile__fieldset">
+					<label class="profile__label">Пароль:</label>
+					<div class="changed w-90 profile__input">
+						<input type="password" name="operator_password" value="123456789" disabled placeholder="Пароль" />
+					</div>
+					<button type="button" class="link">Сгенерировать новый</button>
+				</div>
+				<div>
+					<button type="submit" class="button-blue w-100">Сохранить изменения</button>
+				</div>
+			</div>
+		</form>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="admin/profile">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../admin.html" title="Список организаций" class="button-transparent-light">Организации</a>
+				<a href="../admin/addorg.html" title="Добавить организацию" class="button-addorg">Добавить&nbsp;организацию</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Настройки личного кабинета  
+				<span class="divider">|</span>
+				<a href="../admin.html" class="p13">Вернуться к списку организаций</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form action="org.html" method="get" class="row mt-10">
+			<div class="col-1-5">
+				<p class="p13">
+					Статус:<br> 
+					<span>Администратор</span>
+				</p>
+				<p class="p13">
+					Создан:<br> 
+					<span>10.12.2018 в 16:02</span><br> 
+					<span>GMT +3</span>
+				</p>
+			</div>
+			<div class="col-2-5">
+				<div class="mb-20 changed">
+					<input type="text" name="operator_surname" value="Николаев" disabled placeholder="Фамилия" />
+				</div>
+				<div class="mb-20 changed">
+					<input type="text" name="operator_name1" value="Александр" disabled placeholder="Имя" />
+				</div>
+				<div class="changed">
+					<input type="text" name="operator_name2" value="Сергеевич" disabled placeholder="Отчество" />
+				</div>
+			</div>
+			<div class="col-2-5">
+				<div class="mb-20 profile__fieldset">
+					<label class="profile__label">Логин:</label>
+					<div class="changed w-240 profile__input">
+						<input type="text" name="operator_login" value="admin@inbox.ru" disabled placeholder="Логин" />
+					</div>
+				</div>
+				<div class="mb-20 profile__fieldset">
+					<label class="profile__label">Пароль:</label>
+					<div class="changed w-90 profile__input">
+						<input type="password" name="operator_password" value="123456789" disabled placeholder="Пароль" />
+					</div>
+					<button type="button" class="link">Сгенерировать новый</button>
+				</div>
+				<div>
+					<button type="submit" class="button-blue w-100">Сохранить изменения</button>
+				</div>
+			</div>
+		</form>
+	</div>
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

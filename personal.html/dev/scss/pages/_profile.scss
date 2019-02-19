@@ -1,0 +1,27 @@
+.profile__fieldset {
+	overflow: hidden;
+	.link {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 40px; 
+	}
+}
+	.profile__label {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 15px;
+		line-height: 40px; 
+		color: $text;
+	}
+	.profile__input {
+		display: inline-block;
+		margin: 0 0.3em;
+		vertical-align: middle;
+		line-height: 40px; 
+		&.w-240 {
+			width: 240px;
+		}
+		&.w-90 {
+			width: 90px;
+		}
+	}
