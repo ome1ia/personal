@@ -1,0 +1,27 @@
+.admin_org {
+	.field {
+		display: block;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+	.w-140 {
+		width: 140px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.w-120 {
+		@extend .w-140;
+		width: 120px;
+	}
+	.w-70 {
+		@extend .w-140;
+		width: 70px;
+	}
+	label {
+		display: inline-block;
+		margin: 0 0.3em;
+		vertical-align: middle;
+		line-height: 40px;
+		font-size: 15px;
+	}
+}

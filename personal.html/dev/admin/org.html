@@ -1,0 +1,247 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_admin.html', {"path": ".."})
+	<div class="maincontent container">
+		<h2 class="mt-10 mb-8">Наименование организации</h2>
+		<p class="p13 mb-35">
+			ID: <span>4202800</span>  
+			<span class="divider">|</span>  
+			ИНН: <span>7726018560</span>
+			<span class="divider">|</span> 
+			Создана: <span>10.12.2018 в 16:02 GMT +3</span>
+			<span class="divider">|</span> 
+			Последний отчёт: <span>20.12.2018 в 14:06 GMT +3</span>
+		</p>
+
+		<div class="row">
+			<a href="#org_data" class="tab__title tab__title-active">Данные организации</a>
+			<a href="#operators" class="tab__title">Главные операторы</a>
+			<a href="#reports" class="tab__title">Отчёты</a>
+		</div>
+
+		<div>
+			<div class="tabs__content tabs__content-active" id="org_data">
+				<form action="org.html" method="post" class="admin_org">
+					<div class="row">
+						<div class="col-3-5">
+							<div class="field">
+								<div class="changed">
+									<input type="text" name="org_name" value="" placeholder="Наименование организации" disabled="" />
+								</div>
+							</div>
+							<div class="field">
+								<div class="changed w-140">
+									<input type="text" name="org_inn" value="7726018560" placeholder="ИНН" />
+								</div>
+								<label>ИНН</label>
+							</div>
+							<div class="field">
+								<div class="changed w-70">
+									<input type="number" step="1" min="0" max="100" name="org_priority" value="100" placeholder="" />
+								</div>
+								<label>приоритет при обработке данных</label>
+							</div>
+							<div class="field">
+								<div class="changed w-70">
+									<input type="number" step="1" min="0" name="workers_tested" value="100" placeholder="" />
+								</div>
+								<label>количество тестовых сотрудников</label>
+							</div>
+						</div>
+						<div class="col-2-5">
+							<div class="field">
+								<div class="changed w-140">
+									<input type="text" name="update_date" value="10, 20" placeholder="" />
+								</div>
+								<label>даты автообновления</label>
+							</div>
+							<div class="field">
+								<div class="changed w-70">
+									<input type="number" step="1" min="0" name="keywords_size" value="100" placeholder="" />
+								</div>
+								<label>количество ключевых слов</label>
+							</div>
+							<div class="field">
+								<div class="changed w-70">
+									<input type="number" step="1" min="0" name="requests_size" value="1000" placeholder="" />
+								</div>
+								<label> количество запросов в месяц</label>
+							</div>
+							<div class="field">
+								<button type="submit" class="button-blue w-100">Сохранить изменения</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="tabs__content" id="operators">
+				<p class="p13">Всего главных операторов: 2</p>
+				<table class="mb-40 p13 table--border-bottom">
+					<tr>
+						<th class="left">
+							<a href="#" title="Фамилия">Фамилия</a>
+						</th>
+						<th class="left">
+							<a href="#" title="Имя">Имя</a>
+						</th>
+						<th class="left">
+							<a href="#" title="Отчество">Отчество</a>
+						</th>
+						<th class="left">
+							<a href="#" title="Email login">Логин</a>
+						</th>
+						<th class="center">
+							<a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a>
+						</th>
+						<th class="center">
+							<a href="#" title="Вход под оператором"><i class="fas fa-sign-in-alt"></i></a>
+						</th>
+						<th class="center">
+							<a href="#" title="Блокировка оператора"><i class="fa fa-ban"></i></a>
+						</th>
+						<th class="center">
+							<a href="#" title="Удалить оператора"><i class="fas fa-trash-alt"></i></a>
+						</th>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_surname" value="Изотов" placeholder="Фамилия" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_name1" value="Сергий" placeholder="Имя" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_name2" value="Витольдович" placeholder="Отчество" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed w-122">
+								<input type="text" name="oparator_email" value="admin@mail.ru" placeholder="Email (login)" disabled />
+							</div>
+						</td>
+						<td class="center">
+							<a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a>
+						</td>
+						<td class="center">
+							<a href="../operator.html" title="Войти под Главным оператором"><i class="fas fa-sign-in-alt"></i></a>
+						</td>
+						<td class="center">
+							<a href="#" title="Заблокировать оператора"><i class="fa fa-pause red"></i></a>
+						</td>
+						<td class="p14 center">
+							<a href="#" title="Удалить оператора"><i class="fas fa-trash-alt red"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_surname" value="Изотов" placeholder="Фамилия" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_name1" value="Сергий" placeholder="Имя" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed">
+								<input type="text" name="operator_name2" value="Витольдович" placeholder="Отчество" disabled />
+							</div>
+						</td>
+						<td>
+							<div class="changed w-122">
+								<input type="text" name="oparator_email" value="admin@mail.ru" placeholder="Email (login)" disabled />
+							</div>
+						</td>
+						<td class="center">
+							<a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a>
+						</td>
+						<td class="center">
+							<a href="../operator.html" title="Войти под Главным оператором"><i class="fas fa-sign-in-alt"></i></a>
+						</td>
+						<td class="center">
+							<a href="#" title="Разблокировать оператора"><i class="fa fa-play red"></i></a>
+						</td>
+						<td class="center">
+							<a href="#" title="Удалить оператора"><i class="fas fa-trash-alt red"></i></a>
+						</td>
+					</tr>
+				</table>
+
+				<h3>Добавить главного оператора</h3>
+				<form method="post" action="org.html#operators" class="row mb-30">
+					<div class="col-1-5">
+						<div class="input--small">
+							<input type="text" name="oparator_surname" value="" placeholder="Фамилия" />
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="input--small">
+							<input type="text" name="oparator_name1" value="" placeholder="Имя" />
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="input--small">
+							<input type="text" name="oparator_name2" value="" placeholder="Отчество" />
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="input--small">
+							<input type="text" name="oparator_email" value="" placeholder="Email (login)" />
+						</div>
+					</div>
+					<div class="col-1-5">
+						<button type="submit" class="button-blue button-small w-100">Сохранить</button>
+					</div>
+				</form>
+			</div>
+			<div class="tabs__content" id="reports">
+				<p>
+					<a href="#" class="button-blue">Новый отчёт</a>
+				</p>
+				<p class="p13">Всего отчётов: <span>3</span></p>
+
+				<table class="p13 table--border-bottom mb-30">
+					<tr>
+						<th class="left"><a href="#" title="Дата формирования отчёта">Дата</a></th>
+						<th class="left"><a href="#" title="Время формирования отчёта">Время</a></th>
+						<th class="left"><a href="#" title="Название отчёта">Наименование</a></th>
+						<th><a href="#" title="Скачать отчёт"><i class="fa fa-download"></i></a></th>
+						<th><a href="#" title="Удалить отчёт"><i class="fas fa-trash-alt"></i></a></th>
+					</tr>
+
+					<tr>
+						<td>20.12.2018</td>
+						<td>14-06</td>
+						<td>Наименование отчёта по организации</td>
+						<td class="center"><a href="#" title="Сохранить"><i class="fas fa-file-alt"></i></a></td>
+						<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red"></i></a></td>
+					</tr>
+					<tr>
+						<td>22.12.2018</td>
+						<td>15-02</td>
+						<td>Наименование отчёта по организации</td>
+						<td class="center"><a href="#" title="Сохранить"><i class="fas fa-file-alt"></i></a></td>
+						<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red"></i></a></td>
+					</tr>
+					<tr>
+						<td>24.12.2018</td>
+						<td>16-48</td>
+						<td>Наименование отчёта по организации</td>
+						<td class="center"><a href="#" title="Сохранить"><i class="fas fa-file-alt"></i></a></td>
+						<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red"></i></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

@@ -1,0 +1,92 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_admin.html', {"path": ".."})
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Создание новой организации  
+				<span class="divider">|</span>
+				<a href="../admin.html" class="p13">Вернуться к списку организаций</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form method="post" action="addorg.html" class="addorg">
+			<h3>Данные организации</h3>
+
+			<div class="row mb-30">
+				<div class="col-6">
+					<input type="text" name="org_name" value="" placeholder="Наименование организации" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="org_inn" value="" placeholder="ИНН организации" />
+				</div>
+				<div class="col-3">
+					<input type="number" step="1" min="0" max="100" name="org_priority" value="" placeholder="Приоритет от 1 до 100" />
+				</div>
+			</div>
+
+			<div class="row mb-30">
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="workers_size" value="" placeholder="Максимальное количество сотрудников" />
+					<label class="p12 mt-3">Целое число. По умолчанию 100.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="applicant_size" value="" placeholder="Максимальное количество соискателей" />
+					<label class="p12 mt-3">Целое число. По умолчанию 100.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="workers_tested" value="" placeholder="Количество тестовых сотрудников" />
+					<label class="p12 mt-3">Целое число. При значении 0 — неограниченно.</label>
+				</div>
+			</div>
+
+			<div class="row mb-60">
+				<div class="col-4">
+					<input type="text" name="update_date" value="" placeholder="Даты автоматического обновления" />
+					<label class="p12 mt-3">Числа месяца через запятую. Пример: 10, 20.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="keywords_size" value="" placeholder="Лимит количества ключевых слов" />
+					<label class="p12 mt-3">Целое число. При значении 0 — неограниченно.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="requests_size" value="" placeholder="Максимальное количество запросов" />
+					<label class="p12 mt-3">Максимальное количество запросов в месяц.</label>
+				</div>
+			</div>
+
+			<h3>Главные операторы</h3>
+
+			<div class="row mb-20">
+				<div class="col-3">
+					<input type="text" name="oparator_surname" value="" placeholder="Фамилия" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_name1" value="" placeholder="Имя" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_name2" value="" placeholder="Отчество" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_email" value="" placeholder="Email (login)" />
+				</div>
+			</div>
+
+			<p class="mb-45">
+				<button type="button" class='link'>Добавить главного оператора</button>
+			</p>
+
+			<div class="row mb-10">
+				<div class="col-3">
+					<button type="submit" class="button-blue button-big w-100">Создать организацию</button>
+				</div>
+			</div>
+		</form>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="admin/profile">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../admin.html" title="Список организаций" class="button-transparent-light">Организации</a>
+				<a href="../admin/addorg.html" title="Добавить организацию" class="button-addorg">Добавить&nbsp;организацию</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Создание новой организации  
+				<span class="divider">|</span>
+				<a href="../admin.html" class="p13">Вернуться к списку организаций</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form method="post" action="addorg.html" class="addorg">
+			<h3>Данные организации</h3>
+
+			<div class="row mb-30">
+				<div class="col-6">
+					<input type="text" name="org_name" value="" placeholder="Наименование организации" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="org_inn" value="" placeholder="ИНН организации" />
+				</div>
+				<div class="col-3">
+					<input type="number" step="1" min="0" max="100" name="org_priority" value="" placeholder="Приоритет от 1 до 100" />
+				</div>
+			</div>
+
+			<div class="row mb-30">
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="workers_size" value="" placeholder="Максимальное количество сотрудников" />
+					<label class="p12 mt-3">Целое число. По умолчанию 100.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="applicant_size" value="" placeholder="Максимальное количество соискателей" />
+					<label class="p12 mt-3">Целое число. По умолчанию 100.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="workers_tested" value="" placeholder="Количество тестовых сотрудников" />
+					<label class="p12 mt-3">Целое число. При значении 0 — неограниченно.</label>
+				</div>
+			</div>
+
+			<div class="row mb-60">
+				<div class="col-4">
+					<input type="text" name="update_date" value="" placeholder="Даты автоматического обновления" />
+					<label class="p12 mt-3">Числа месяца через запятую. Пример: 10, 20.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="keywords_size" value="" placeholder="Лимит количества ключевых слов" />
+					<label class="p12 mt-3">Целое число. При значении 0 — неограниченно.</label>
+				</div>
+				<div class="col-4">
+					<input type="number" step="1" min="0" name="requests_size" value="" placeholder="Максимальное количество запросов" />
+					<label class="p12 mt-3">Максимальное количество запросов в месяц.</label>
+				</div>
+			</div>
+
+			<h3>Главные операторы</h3>
+
+			<div class="row mb-20">
+				<div class="col-3">
+					<input type="text" name="oparator_surname" value="" placeholder="Фамилия" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_name1" value="" placeholder="Имя" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_name2" value="" placeholder="Отчество" />
+				</div>
+				<div class="col-3">
+					<input type="text" name="oparator_email" value="" placeholder="Email (login)" />
+				</div>
+			</div>
+
+			<p class="mb-45">
+				<button type="button" class='link'>Добавить главного оператора</button>
+			</p>
+
+			<div class="row mb-10">
+				<div class="col-3">
+					<button type="submit" class="button-blue button-big w-100">Создать организацию</button>
+				</div>
+			</div>
+		</form>
+	</div>
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
