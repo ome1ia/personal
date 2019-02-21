@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="../operator/profile.html">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../operator.html" class="button-transparent-light p16" title="Список персон"><i class="fa fa-users"></i></a>
+				<a href="../operator/tree.html" class="button-transparent-light p16" title="Структура организации"><i class="fa fa-sitemap"></i></a>
+				<a href="../operator/words.html" class="button-transparent-light p16" title="Ключевые слова и фразы"><i class="fas fa-pencil-alt"></i></a>
+				<a href="../operator/report.html" class="button-transparent-light p16" title="Отчёты"><i class="fas fa-file-alt"></i></a>
+				<a href="../operator/oplist.html" class="button-transparent-light p16" title="Список операторов"><i class="fa fa-user"></i></a>
+				<a href="../operator/graph.html" class="button-transparent-light p16" title="Социальный граф организации"><i class="fas fa-link"></i></a>
+				<a href="../operator/reg01.html" title="Добавить соискателя, сотрудника" class="button-addorg">Добавить&nbsp;соискателя</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Операторы  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form method="get" action="oplist.html" class="row mb-32">
+			<div class="col-1-5">
+				<div class="input-38">
+					<input type="text" name="operator_surname" value="" placeholder="Фамилия" />
+				</div>
+			</div>
+			<div class="col-1-5">
+				<div class="input-38">
+					<input type="text" name="operator_name1" value="" placeholder="Имя" />
+				</div>
+			</div>
+			<div class="col-1-5">
+				<div class="input-38">
+					<input type="text" name="operator_name2" value="" placeholder="Отчество" />
+				</div>
+			</div>
+			<div class="col-1-5">
+				<div class="input-38">
+					<input type="text" name="operator_email" value="" placeholder="Email (login)" />
+				</div>
+			</div>
+			<div class="col-1-5">
+				<button type="submit" class="button-blue w-100">Поиск</button>
+			</div>
+		</form>
+
+		<p class="p13">Всего операторов: <span>2</span></p>
+
+		<table class="mb-42 p13 table--border-bottom">
+			<tr>
+				<th style="width:240px" class="left"><a href="#" title="">Контролируемые подразделения</a></th>
+				<th class="left"><a href="#" title="Фамилия">Фамилия</a></th>
+				<th class="left"><a href="#" title="Имя">Имя</a></th>
+				<th class="left"><a href="#" title="Отчество">Отчество</a></th>
+				<th class="left"><a href="#" title="Email login">Логин</a></th>
+				<th><a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a></th>
+				<th><a href="#" title="Вход под оператором"><i class="fas fa-sign-in-alt"></i></a></th>
+				<th><a href="#" title="Блокировка оператора"><i class="fa fa-ban"></i></a></th>
+				<th><a href="#" title="Удалить оператора"><i class="fas fa-trash-alt p12_5"></i></a></th>
+			</tr>
+
+			<tr>
+				<td>
+					<div class="select select--30">
+						<select name="department">
+							<option value="">Все подразделения</option>
+							<option value="0">Подразделение верхнего уровня</option>
+							<option value="1">Родительское подразделение 01</option>
+							<option value="1-1">— Подразделение второго уровня 01</option>
+							<option value="1-2">— Подразделение второго уровня 01</option>
+							<option value="2">Родительское подразделение 02</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_surname" value="Изотов" placeholder="Фамилия" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_name1" value="Сергий" placeholder="Имя" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_name2" value="Витольдович" placeholder="Отчество" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_email" value="admin@mail.ru" placeholder="Email (login)" />
+					</div>
+				</td>
+				<td class="center">
+					<a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a>
+				</td>
+				<td class="center">
+					<a href="../operator.html" title="Войти под Главным оператором"><i class="fas fa-sign-in-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Заблокировать оператора"><i class="fa fa-pause p12_5 red"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить оператора"><i class="fas fa-trash-alt p12_5 red"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="select select--30">
+						<select name="department">
+							<option value="">Все подразделения</option>
+							<option value="0">Подразделение верхнего уровня</option>
+							<option value="1">Родительское подразделение 01</option>
+							<option value="1-1">— Подразделение второго уровня 01</option>
+							<option value="1-2">— Подразделение второго уровня 01</option>
+							<option value="2">Родительское подразделение 02</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_surname" value="Изотов" placeholder="Фамилия" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_name1" value="Сергий" placeholder="Имя" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_name2" value="Витольдович" placeholder="Отчество" />
+					</div>
+				</td>
+				<td>
+					<div class="changed input-30">
+						<input type="text" name="operator_email" value="admin@mail.ru" placeholder="Email (login)" />
+					</div>
+				</td>
+				<td class="center">
+					<a href="#" title="Сохранить изменения"><i class="far fa-save"></i></a>
+				</td>
+				<td class="center">
+					<a href="../operator.html" title="Войти под Главным оператором"><i class="fas fa-sign-in-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Разблокировать оператора"><i class="fa fa-play p12_5 red" style="color:#e02500;"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить оператора"><i class="fas fa-trash-alt p12_5 red"></i></a>
+				</td>
+			</tr>
+		</table>
+
+		<h4>Добавить оператора</h4>
+
+		<form action="oplist.html" method="post">
+			<div class="row mb-10">
+				<div class="col-3">
+					<div class="input-38">
+						<input type="text" name="operator_surname" value="" placeholder="Фамилия" />
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="input-38">
+						<input type="text" name="operator_name1" value="" placeholder="Имя" />
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="input-38">
+						<input type="text" name="operator_name2" value="" placeholder="Отчество" />
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="input-38">
+						<input type="text" name="operator_email" value="" placeholder="Email (login)" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-9">
+					<div class="select select--middle">
+						<select name="department">
+							<option value="">Выбор подразделений оператора</option>
+							<option value="all">Все подразделения</option>
+							<option value="0">Подразделение верхнего уровня</option>
+							<option value="1">Родительское подразделение 01</option>
+							<option value="1-1">— Подразделение второго уровня 01</option>
+							<option value="1-2">— Подразделение второго уровня 01</option>
+							<option value="2">Родительское подразделение 02</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="button-blue w-100">Сохранить</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

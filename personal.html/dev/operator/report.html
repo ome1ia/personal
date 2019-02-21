@@ -1,0 +1,98 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html', {"path": ".."})
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Отчёты  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form action="report.html" method="get" class="row mb-42">
+			<div class="col-4">
+				<div class="input-42">
+					<input type="text" name="report_name" value="" placeholder="Название отчёта" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="select select--42">
+					<select name="report_department">
+						<option value="0">Для всей организации</option>
+						<option value="1">Родительское подразделение 01</option>
+						<option value="1-1">— Подразделение второго уровня 01</option>
+						<option value="1-2">— Подразделение второго уровня 01</option>
+						<option value="2">Родительское подразделение 02</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-4">
+				<button type="submit" class="button-blue button-42 w-100">Сформировать отчёт</button>
+			</div>
+		</form>
+
+		<table class="p13 table--border-bottom">
+			<tr>
+				<th class="left">Создан</th>
+				<th class="left">Название отчёта</th>
+				<th>
+					<a href="#" title="Скачать"><i class="fa fa-download"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Отправить по email"><i class="fas fa-at"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt p12_5"></i></a>
+				</th>
+			</tr>
+
+			<tr>
+				<td>10.12.18 в 16-00</td>
+				<td>Наименование отчёта по организации или подразделениям 01</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>15.12.18 в 12-00</td>
+				<td>Наименование отчёта по организации или подразделениям 02</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>20.12.18 в 20-05</td>
+				<td>Наименование отчёта по организации или подразделениям 03</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

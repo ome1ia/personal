@@ -1,0 +1,40 @@
+.operator_tree {
+	.dropdown-title a {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+		font-size: 13px;
+	}
+	.red-2:hover {
+		color: $red;
+	}
+	.fa-trash-alt {
+		font-size: 12px;
+		margin-top: -0.5px;
+	}
+}
+
+	.tree_positions {
+		margin-top: 2px;
+		margin-bottom: 2px;
+		background-color:#fff;
+		border:1px solid #999;
+		padding:10px;
+		p {
+			line-height: 1.6em;
+		}
+		i {
+			font-size: 13px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+		.fa-trash-alt {
+			font-size: 12px;
+			margin-left: 8px;
+			margin-top: -0.5px;
+		}
+		.fa-cog {
+			margin-top: -0.5px;
+		}
+	}

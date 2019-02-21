@@ -66,6 +66,27 @@ input.input--small {
     font-size: 13px;
     line-height: 22px;
 }
+.input-30 input,
+input.input-30 {
+    height: 30px;
+    padding: 4px 15px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.input-38 input,
+input.input-38 {
+    height: 38px;
+    padding: 7px 15px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.input-42 input,
+input.input-42 {
+    height: 40px;
+    padding: 8px 15px;
+    font-size: 14px;
+    line-height: 24px;
+}
 .select {
     overflow: hidden;
     position: relative;
@@ -116,12 +137,22 @@ input.input--small {
         -o-border-radius: 0;
     }
 
+    &.select--42 {
+        select {
+            height: 42px;
+        }
+        &:after {
+            width: 40px;
+            line-height: 40px;
+        }
+    }
     &.select--big {
         select {
             height: 40px;
         }
         &:after {
             width: 38px;
+            line-height: 38px;
         }
     }
     &.select--middle {
@@ -130,6 +161,16 @@ input.input--small {
         }
         &:after {
             width: 36px;
+            line-height: 36px;
+        }
+    }
+    &.select--30 {
+        select {
+            height: 30px;
+        }
+        &:after {
+            width: 28px;
+            line-height: 28px;
         }
     }
 }

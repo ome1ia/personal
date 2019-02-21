@@ -1,0 +1,123 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html', {"path": ".."})
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Структура организации  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<h3>Наименование организации</h3>
+
+		<form action="tree.html" method="get" class="row mb-20">
+			<div class="col-4">
+				<div class="input-38">
+					<input type="text" name="department_name" value="" placeholder="Наименование подразделения">
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="select select--middle">
+					<select name="department_parent">
+							<option value="">Выбор родительского подразделения</option>
+							<option value="0">Подразделение верхнего уровня</option>
+							<option value="1">Родительское подразделение 01</option>
+							<option value="1-1">— Подразделение второго уровня 01</option>
+							<option value="1-2">— Подразделение второго уровня 01</option>
+							<option value="2">Родительское подразделение 02</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-2">
+				<button type="submit" class="button-blue w-100">
+					<i class="fa fa-plus"></i>
+				</button>
+			</div>
+		</form>
+
+		<ul class="dropdownlist operator_tree">
+			<li>
+				<h3 class="dropdown-title">
+					<button class="dropdown-expand icon-plus" data-target="dep_1"><span>Раскрыть</span></button>
+					 Родительское подразделение 01
+					 @@include('../template/duplicated_parts/tree_icons.html')
+				</h3>
+
+				<div class="dropdownlist__categories hidden" id="dep_1">
+					@@include('../template/duplicated_parts/tree_positions.html')
+				</div>
+			</li>
+			<li>
+				<h3 class="dropdown-title">
+					<button class="dropdown-expand icon-plus" data-target="dep_2"><span>Раскрыть</span></button>
+					 Родительское подразделение 01
+					 @@include('../template/duplicated_parts/tree_icons.html')
+				</h3>
+
+				<ul class="dropdownlist__categories hidden" id="dep_2">
+					<li class="dropdownlist__category">
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="dep_2_1"><span>Раскрыть</span></button>
+							Подразделение второго уровня 01
+							@@include('../template/duplicated_parts/tree_icons.html')
+						</h3>
+						<ul class="dropdownlist__categories_body hidden" id="dep_2_1">
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="dep_2_1_1"><span>Раскрыть</span></button>
+									Подразделение третьего уровня 01
+									@@include('../template/duplicated_parts/tree_icons.html')
+								</h3>
+								<div class="dropdownlist__categories_body hidden" id="dep_2_1_1">
+									@@include('../template/duplicated_parts/tree_positions.html')
+								</div>
+							</li>
+
+						</ul>
+					</li>
+					<li class="dropdownlist__category">
+						<h3 class="dropdown-title">
+							<button class="dropdown-expand icon-plus" data-target="dep_2_2"><span>Раскрыть</span></button>
+							Подразделение второго уровня 02
+							@@include('../template/duplicated_parts/tree_icons.html')
+						</h3>
+						<ul class="dropdownlist__categories_body hidden" id="dep_2_2">
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="dep_2_2_1"><span>Раскрыть</span></button>
+									Подразделение третьего уровня 01
+									@@include('../template/duplicated_parts/tree_icons.html')
+								</h3>
+								<div class="dropdownlist__categories_body hidden" id="dep_2_2_1">
+									@@include('../template/duplicated_parts/tree_positions.html')
+								</div>
+							</li>
+							<li>
+								<h3 class="dropdown-title">
+									<button class="dropdown-expand icon-plus" data-target="dep_2_2_2"><span>Раскрыть</span></button>
+									Подразделение третьего уровня 02
+									@@include('../template/duplicated_parts/tree_icons.html')
+								</h3>
+								<div class="dropdownlist__categories_body hidden" id="dep_2_2_2">
+									@@include('../template/duplicated_parts/tree_positions.html')
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="mt-30 mb-10">
+			<a href="#" class="button-blue">Сохранить изменения</a>
+		</div>
+	</div>
+
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

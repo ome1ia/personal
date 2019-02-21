@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="../operator/profile.html">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../operator.html" class="button-transparent-light p16" title="Список персон"><i class="fa fa-users"></i></a>
+				<a href="../operator/tree.html" class="button-transparent-light p16" title="Структура организации"><i class="fa fa-sitemap"></i></a>
+				<a href="../operator/words.html" class="button-transparent-light p16" title="Ключевые слова и фразы"><i class="fas fa-pencil-alt"></i></a>
+				<a href="../operator/report.html" class="button-transparent-light p16" title="Отчёты"><i class="fas fa-file-alt"></i></a>
+				<a href="../operator/oplist.html" class="button-transparent-light p16" title="Список операторов"><i class="fa fa-user"></i></a>
+				<a href="../operator/graph.html" class="button-transparent-light p16" title="Социальный граф организации"><i class="fas fa-link"></i></a>
+				<a href="../operator/reg01.html" title="Добавить соискателя, сотрудника" class="button-addorg">Добавить&nbsp;соискателя</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Отчёты  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form action="report.html" method="get" class="row mb-42">
+			<div class="col-4">
+				<div class="input-42">
+					<input type="text" name="report_name" value="" placeholder="Название отчёта" />
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="select select--42">
+					<select name="report_department">
+						<option value="0">Для всей организации</option>
+						<option value="1">Родительское подразделение 01</option>
+						<option value="1-1">— Подразделение второго уровня 01</option>
+						<option value="1-2">— Подразделение второго уровня 01</option>
+						<option value="2">Родительское подразделение 02</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-4">
+				<button type="submit" class="button-blue button-42 w-100">Сформировать отчёт</button>
+			</div>
+		</form>
+
+		<table class="p13 table--border-bottom">
+			<tr>
+				<th class="left">Создан</th>
+				<th class="left">Название отчёта</th>
+				<th>
+					<a href="#" title="Скачать"><i class="fa fa-download"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Отправить по email"><i class="fas fa-at"></i></a>
+				</th>
+				<th>
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt p12_5"></i></a>
+				</th>
+			</tr>
+
+			<tr>
+				<td>10.12.18 в 16-00</td>
+				<td>Наименование отчёта по организации или подразделениям 01</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>15.12.18 в 12-00</td>
+				<td>Наименование отчёта по организации или подразделениям 02</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+			<tr>
+				<td>20.12.18 в 20-05</td>
+				<td>Наименование отчёта по организации или подразделениям 03</td>
+				<td class="center">
+					<a href="#" title="Скачать"><i class="fas fa-file-alt"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Отправить по email"><i class="fa fa-envelope"></i></a>
+				</td>
+				<td class="center">
+					<a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

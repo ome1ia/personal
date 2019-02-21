@@ -66,6 +66,16 @@
 .row {
 	@extend %flex;
 }
+.col-2 {
+    flex: 0 1 13.3%;
+    margin: 0 4% 0 0;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:nth-child(4n+4) {
+        margin-right: 0;
+    }
+}
 .col-3 {
 	flex: 0 1 22%;
 	margin: 0 4% 0 0;
@@ -217,6 +227,9 @@
 .mt-18 {
     margin-top: 18px;
 }
+.mt-20 {
+    margin-top: 20px;
+}
 .mt-30 {
     margin-top: 30px;
 }
@@ -253,8 +266,14 @@
 .mb-30 {
     margin-bottom: 30px;
 }
+.mb-32 {
+    margin-bottom: 32px;
+}
 .mb-40 {
     margin-bottom: 40px;
+}
+.mb-42 {
+    margin-bottom: 42px;
 }
 .mb-45 {
     margin-bottom: 45px;
