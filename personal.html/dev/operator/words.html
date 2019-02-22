@@ -1,0 +1,68 @@
+@@include('../template/head.html', {"path": ".."})
+</head>
+<body>
+@@include('../template/header_operator.html', {"path": ".."})
+
+	<div class="breadcrumbs">
+		<div class="container row">
+			<p>
+				Ключевые слова и фразы  
+				<span class="divider">|</span>
+				<a href="../operator.html" class="p13">Вернуться к списку сотрудников и соискателей</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<form action="words.html" method="get" class="row mb-42">
+			<div class="col-6">
+				<textarea name="words" style="height: 236px;" placeholder="Введите список слов и/или словосочетаний через запятую, либо с красной строки."></textarea>
+			</div>
+			<div class="col-6">
+				<div class="input-42 mb-10">
+					<input type="text" name="words_title" value="" placeholder="Название списка" />
+				</div>
+				<div class="select select--42 mb-20">
+					<select name="department">
+						<option value="0">Для всех подразделений</option>
+						<option value="1">Родительское подразделение 01</option>
+						<option value="1-1">— Подразделение второго уровня 01</option>
+						<option value="1-2">— Подразделение второго уровня 01</option>
+						<option value="2">Родительское подразделение 02</option>
+					</select>					
+				</div>
+				<button type="submit" class="button-blue button-big w-100">Создать новый список</button>
+			</div>
+		</form>
+
+<table class='p13 mb-10 table--border-bottom'>
+<tr>
+	<th class="left" style="width: 110px;">Создан</th>
+	<th class="left">Название списка</th>
+	<th style="width: 20px;"><i class="fas fa-cog" title="Редактирование списка"></i></th>
+	<th style="width: 20px;"><i class="fas fa-trash-alt p12_5" title="Удаление списка"></i></th>
+</tr>
+
+<tr>
+	<td>10.12.18 в 16-00</td>
+	<td>Наименование списка ключевых слов и словосочетаний 01</td>
+	<td class="center"><a href="#" title="Изменить"><i class="fas fa-cog"></i></a></td>
+	<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a></td>
+</tr>
+<tr>
+	<td>15.12.18 в 12-00</td>
+	<td>Наименование списка ключевых слов и словосочетаний 02</td>
+	<td class="center"><a href="#" title="Изменить"><i class="fas fa-cog"></i></a></td>
+	<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a></td>
+</tr>
+<tr>
+	<td>20.12.18 в 20-05</td>
+	<td>Наименование списка ключевых слов и словосочетаний 03</td>
+	<td class="center"><a href="#" title="Изменить"><i class="fas fa-cog"></i></a></td>
+	<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt red p12_5"></i></a></td>
+</tr>
+</table>
+	</div>
+@@include('../template/footer.html', {"path": ".."})
+</body>
+</html>

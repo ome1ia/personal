@@ -81,11 +81,24 @@ input.input-38 {
     line-height: 22px;
 }
 .input-42 input,
-input.input-42 {
-    height: 40px;
+input.input-42,
+.input--42 input,
+input.input--42 {
+    height: 42px;
     padding: 8px 15px;
     font-size: 14px;
     line-height: 24px;
+}
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #444;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #666;
+    resize: none;
+    outline: none;
 }
 .select {
     overflow: hidden;

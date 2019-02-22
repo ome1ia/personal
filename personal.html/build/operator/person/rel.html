@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Personal</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="../../css/main.css" type="text/css"  media="all" />
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_left-menu">
+				<a href="/" class="header_logo">Персонал</a>
+				<a href="../../operator/profile.html">	
+					<span>Настройки</span>
+					<i class="fa fa-cogs"></i>		
+				</a>
+				<a href="/">
+					<span>Выход</span>
+					<i class="fas fa-sign-out-alt"></i>
+				</a>
+			</div>
+			<div class="header_right-menu">
+				<a href="../../operator.html" class="button-transparent-light p16" title="Список персон"><i class="fa fa-users"></i></a>
+				<a href="../../operator/tree.html" class="button-transparent-light p16" title="Структура организации"><i class="fa fa-sitemap"></i></a>
+				<a href="../../operator/words.html" class="button-transparent-light p16" title="Ключевые слова и фразы"><i class="fas fa-pencil-alt"></i></a>
+				<a href="../../operator/report.html" class="button-transparent-light p16" title="Отчёты"><i class="fas fa-file-alt"></i></a>
+				<a href="../../operator/oplist.html" class="button-transparent-light p16" title="Список операторов"><i class="fa fa-user"></i></a>
+				<a href="../../operator/graph.html" class="button-transparent-light p16" title="Социальный граф организации"><i class="fas fa-link"></i></a>
+				<a href="../../operator/reg01.html" title="Добавить соискателя, сотрудника" class="button-addorg">Добавить&nbsp;соискателя</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs breadcrumbs--large">
+		<div class="container row">
+			<div class="col-6">
+				<img src="../../img/pages/person/user_small.jpg" alt="" />
+				<p class="breadcrumbs__title">Изотов Сергей Витольдович</p>
+				<p class="p13">Технический директор</p>
+			</div>
+			<div class="col-6">
+				<p class="p13">Департамент проектирования серверной архитектуры</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="maincontent container">
+		<div class="tabs__container row">
+			<a href="../person.html" class="like_tab__title">Профиль</a>
+			<span class="like_tab__title-active">Связи</span>
+			<a href="report.html" class="like_tab__title">Анализ</a>
+			<a href="archive.html" class="like_tab__title">Архив</a>
+		</div>
+
+		<p class="p12_5 mt-30 mb-42">Последнее обновление связей: 15.12.18 в 12-00, GMT+3</p>
+
+		<p class="p13 mb-32">Добавьте ссылки на страницы в социальных сетях персон, связанных с профилем, и определите тип связи.<br> Допустимо повторение ссылок с различными типами связей.</p>
+
+		<form action="rel.html" method="post" class="row mb-42">
+			<div class="col-2-5">
+				<input type="text" name="rel_link" value="" placeholder="Ссылка на контакт" />
+			</div>
+			<div class="col-2-5">
+				<div class="select select--big">
+					<select name="rel_type">
+						<option value="">Тип связи</option>
+						<option value="1">Друзья</option>
+						<option value="2">Коллеги</option>
+						<option value="3">Сослуживцы</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-1-5">
+				<button type="submit" class="button-input">Сохранить</button>
+			</div>
+		</form>
+
+		<table class='p13 mb-0 table--border-bottom'>
+			<tr>
+				<th style="width:80px"><i class="fa fa-image" title="Аватар связи"></i></th>
+				<th class="left">Ссылка на страницу в социальной сети</th>
+				<th style="width:80px" class="left">Тип связи</th>
+				<th style="width:2px"><i class="fa fa-cog" title="Редактирование связи"></i></th>
+				<th style="width:2px"><i class="fas fa-trash-alt p12_5" title="Удаление связи"></i></th>
+			</tr>
+
+			<tr>
+				<td><img src="../../img/pages/person_rel/user.jpg" alt="" width="80" height="80" class="block"></td>
+				<td>http://vk.com/friend</td>
+				<td>солуживцы</td>
+				<td class="center"><a href="#" title="Редактировать"><i class="fa fa-cog"></i></a></td>
+				<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt p12_5 red"></i></a></td>
+			</tr>
+			<tr>
+				<td><img src="../../img/pages/person_rel/user.jpg" alt="" width="80" height="80" class="block"></td>
+				<td>http://vk.com/friend</td>
+				<td>друзья</td>
+				<td class="center"><a href="#" title="Редактировать"><i class="fa fa-cog"></i></a></td>
+				<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt p12_5 red"></i></a></td>
+			</tr>
+			<tr>
+				<td><img src="../../img/pages/person_rel/user.jpg" alt="" width="80" height="80" class="block"></td>
+				<td>http://vk.com/friend</td>
+				<td>родственники</td>
+				<td class="center"><a href="#" title="Редактировать"><i class="fa fa-cog"></i></a></td>
+				<td class="center"><a href="#" title="Удалить"><i class="fas fa-trash-alt p12_5 red"></i></a></td>
+			</tr>
+		</table>
+	</div>
+
+<footer class="footer">
+    <div class="container row">
+        <p class="col-4">Разработано в <a href="http://ec-leasing.ru/company" target="_blank">ЗАО "ЕС-лизинг"</a></p>
+        <p class="col-4">
+            <a href="about.html" class="link--gray">О сервисе</a>
+            &nbsp;|&nbsp;
+            <a href="feedback.html" class="link--gray">Обратная связь</a>
+        </p>
+        <p class="col-4">© 2019, ПЕРСОНАЛ. Все права защищены.</p>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>
