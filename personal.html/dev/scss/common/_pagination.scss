@@ -7,4 +7,14 @@
         display: inline-block;
         margin: 0 0.3em 0 0;
     }
+    .disabled,
+    .disabled:hover {
+    	color: #aaa;
+    	cursor: default;
+    }
+    .pagination__current,
+    .pagination__current:hover {
+    	color: #333;
+    	cursor: default;
+    }
 }
