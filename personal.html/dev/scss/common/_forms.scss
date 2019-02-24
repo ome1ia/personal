@@ -49,10 +49,20 @@ input::-webkit-input-placeholder {
 //    margin: 0;
 //}
 
-.changed input,
-input.changed {
+.disabled input,
+input.disabled,
+input:disabled {
     border-color: #f8f8f8;
     background-color: #f8f8f8;
+    outline: none;
+}
+
+.changed input,
+.changed input:disabled,
+input.changed,
+input.changed:disabled
+ {
+    border-color: $red;
     font-size: 14px;
 }
 table .changed input,

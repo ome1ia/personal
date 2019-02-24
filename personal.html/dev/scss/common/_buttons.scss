@@ -59,9 +59,9 @@
 
 .button-red {
     @extend %button;
-    background: #fe0000;
+    background: $red;
     &:hover {
-        background: #c20100;
+        background: $red_hover;
     }
 }
 .button-transparent {
@@ -93,6 +93,19 @@
         background: #fff;
         color: $blue;
         border-color: $blue;
+    }
+}
+
+button.disabled,
+button:disabled,
+.disabled button,
+%button.button-disabled {
+    background: #dedede;
+    color: #fff;
+    &:hover {
+        cursor: default;
+        background: #dedede;
+        color: #fff;
     }
 }
 
